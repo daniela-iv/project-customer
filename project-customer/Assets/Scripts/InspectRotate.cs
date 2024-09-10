@@ -7,6 +7,8 @@ public class InspectRotate : MonoBehaviour
     [SerializeField]
     private float speed = 100f;
 
+    private bool buttonIsPressed = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +18,21 @@ public class InspectRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 r = new Vector3(Input.GetAxis("Mouse Y"), -Input.GetAxis("Mouse X"), 0) * Time.deltaTime * speed;
+        if (Input.GetButtonDown("Fire1"))
+        {
+            buttonIsPressed = true;
+        }
+        else if (Input.GetButtonUp("Fire1"))
+        {
+            buttonIsPressed = false;
+        }
 
-        transform.Rotate(r);
+
+        if (buttonIsPressed)
+        {
+            Vector3 r = new Vector3(Input.GetAxis("Mouse Y"), -Input.GetAxis("Mouse X"), 0) * Time.deltaTime * speed;
+
+            transform.Rotate(r);
+        }
     }
 }
