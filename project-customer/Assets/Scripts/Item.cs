@@ -9,7 +9,9 @@ public class Item : MonoBehaviour
 {
     public string Name;
     public int id;
-    public Dialogue itemText;
+    public string itemText;
+    public bool Inspect;
+    public GameObject inspectModel;
     public InteractionType interactionType;
 
     public enum InteractionType

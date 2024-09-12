@@ -9,7 +9,12 @@ public class LookingAt : MonoBehaviour
 
     [SerializeField]
     private Inventory inventory;
-   
+
+    [SerializeField]
+    private GameObject inspect;
+    [SerializeField]
+    private GameObject inspectObjPos;
+
     private void Awake()
     {
     }
@@ -44,6 +49,14 @@ public class LookingAt : MonoBehaviour
                 {
                     Item item = hit.transform.GetComponent<Item>();
                     inventory.GetComponent<Inventory>().PickUp(hit.transform.GetComponent<Item>());
+
+                    if (item.Inspect && inspect.activeSelf == false)
+                    {
+                        inspect.SetActive(true);
+                        Instantiate(item.inspectModel, inspectObjPos.transform.position, new Quaternion(0, 0, 0, 0), inspectObjPos.transform);
+                        camera.GetComponent<MouseLook>().CanLookAround = false;
+                        GetComponent<MouseLook>().CanLookAround = false;
+                    }
 
                     item.Interact();
                 }
