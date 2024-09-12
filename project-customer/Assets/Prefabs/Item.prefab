@@ -120,6 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76885d08464d2ec4ab0aea69d1291f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Like A Chair Or Something
+  Name: Item Name
   Dialogue: {fileID: 11400000, guid: fc226456063b0ff419b91f6a3dba73b3, type: 2}
   italicize: 1
