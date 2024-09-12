@@ -21,7 +21,7 @@ public class Item : MonoBehaviour
         Text,
         Rotate
     }
-    public void Interact(GameObject inspect= null, GameObject inspectObjPos = null)
+    public void Interact(GameObject inspect, GameObject inspectObjPos)
     {
         switch (interactionType)
         {
@@ -31,8 +31,8 @@ public class Item : MonoBehaviour
                 break;
 
             case InteractionType.Rotate:
-
-                if (inspect != null && inspectObjPos !=null && inspect.activeSelf == false)
+                Debug.Log("its trying iggg");
+                if (true)
                 {
                     Debug.Log("item with rotate interact");
                     inspect.SetActive(true);
