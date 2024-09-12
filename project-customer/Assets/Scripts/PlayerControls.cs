@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,6 +36,7 @@ public class SimplePhysicsControls : MonoBehaviour
 
     bool IsGrounded()
     {
+
         RaycastHit hitInfo;
         //Debug.DrawRay(transform.position, Vector3.down * 1.1f,Color.yellow);
         //transform.parent = null;
