@@ -43,12 +43,11 @@ public class LookingAt : MonoBehaviour
                 if (Input.GetButtonDown("Interact"))
                 {
                     Item item = hit.transform.GetComponent<Item>();
-                    if(item.Inspect)
-                    {
-
-                    }
                     inventory.GetComponent<Inventory>().PickUp(hit.transform.GetComponent<Item>());
+
+                    item.Interact();
                 }
+
                 //function to show Examining UI
             }
             else if (hit.transform.gameObject.tag == "Actor")
