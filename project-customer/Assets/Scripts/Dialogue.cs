@@ -4,12 +4,15 @@ using UnityEngine;
 using TMPro;
 using System.Text.RegularExpressions;
 
-public class Dialogue : MonoBehaviour
+[CreateAssetMenu(fileName = "New Dialogue", menuName = "Dialogue Asset")]
+public class Dialogue : ScriptableObject
 {
-    public TMP_Text text;
+    public DialogueNode RootNode;
+
+   /* public TMP_Text text;
     private string currentText;
 
-    CanvasGroup group;
+    CanvasGroup group
 
     void Start()
     {
@@ -57,5 +60,5 @@ public class Dialogue : MonoBehaviour
 
 
         yield return null;
-    }
+    }*/
 }

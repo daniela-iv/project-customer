@@ -12,7 +12,7 @@ public class MouseLook : MonoBehaviour
     }
     [SerializeField] private Direction directions;
     [SerializeField] private Vector2 acceleration;
-    [SerializeField] private Vector2 sensitivity;
+    [SerializeField] public Vector2 sensitivity;
      private Vector2 velocity;
      private Vector2 rotation;
 
@@ -21,9 +21,11 @@ public class MouseLook : MonoBehaviour
     private Vector2 lastInput;
     [SerializeField] private float inputLagPeriod;
     private float inputLagTimer;
+    public bool CanLookAround;
 
     private void OnEnable()
     {
+        CanLookAround = true;
         velocity = Vector3.zero;
         inputLagTimer = 0;
         lastInput = Vector3.zero;
@@ -60,6 +62,8 @@ public class MouseLook : MonoBehaviour
 
     private void Update()
     {
+        if (!CanLookAround) return;
+
         Vector2 appliedVelocity = GetInput() * sensitivity;
 
         if((directions & Direction.Horizontal) == 0)
