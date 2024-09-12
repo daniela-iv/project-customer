@@ -396,11 +396,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 5.371, y: -202.913, z: -444.492}
---- !u!20 &816579830 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 3408929178983980803, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
-  m_PrefabInstance: {fileID: 8345895976165695656}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &949409369
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,20 +618,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7348576923927485984, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
   m_PrefabInstance: {fileID: 8345895976165695656}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1243072575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243072567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06f894912203e0247b451eb16c25ceaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 816579830}
-  LookDistance: 7
 --- !u!1 &1338775311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,25 +1197,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6579363196364903286, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
-      propertyPath: sensitivity.x
-      value: 2000
-      objectReference: {fileID: 0}
     - target: {fileID: 7348576923927485984, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7348576923927485984, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7348576923927485984, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1243072575}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
 --- !u!1001 &9216090473719387057
 PrefabInstance:

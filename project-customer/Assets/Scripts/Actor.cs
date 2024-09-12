@@ -20,7 +20,7 @@ public class Actor : MonoBehaviour, iLookReciever
     {
         if (isLookingAt)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetButtonDown("Interact"))
             {
                 SpeakWith();
             }

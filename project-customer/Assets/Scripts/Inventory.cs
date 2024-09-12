@@ -35,13 +35,16 @@ public class Inventory : MonoBehaviour
 
     public void PickUp(Item item)
     {
-        for (int i = 0; i < invSlots.Length; i++)
+        if (!ItemCheck(item))
         {
-            if (invSlots[i].itemInSlot == null)
+            for (int i = 0; i < invSlots.Length; i++)
             {
-                invSlots[i].itemInSlot = item;
-                text.text += item.itemText;
-                break;
+                if (invSlots[i].itemInSlot == null)
+                {
+                    invSlots[i].itemInSlot = item;
+                    text.text += item.itemText;
+                    break;
+                }
             }
         }
     }

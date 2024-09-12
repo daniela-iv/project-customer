@@ -6,6 +6,9 @@ public class LookingAt : MonoBehaviour
     public Camera camera;
     private GameObject lastLookedAt;
     public float LookDistance;
+
+    [SerializeField]
+    private Inventory inventory;
    
     private void Awake()
     {
@@ -37,6 +40,10 @@ public class LookingAt : MonoBehaviour
             if (hit.transform.gameObject.tag == "Item")
             {
                 Debug.Log("look at item");
+                if (Input.GetButtonDown("Interact"))
+                {
+                    inventory.GetComponent<Inventory>().PickUp(hit.transform.GetComponent<Item>());
+                }
                 //function to show Examining UI
             }
             else if (hit.transform.gameObject.tag == "Actor")
