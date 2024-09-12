@@ -1468,9 +1468,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   id: 0
-  itemText: ' <br>you found a item 2'
-  Inspect: 0
+  ItemDialogue: {fileID: 11400000, guid: fc226456063b0ff419b91f6a3dba73b3, type: 2}
+  ItemNote: theres a note
   inspectModel: {fileID: 0}
+  interactionType: 1
 --- !u!65 &913544059
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1926,9 +1927,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   id: 0
-  itemText: <br>you found a item 4
-  Inspect: 0
+  ItemDialogue: {fileID: 11400000, guid: fc226456063b0ff419b91f6a3dba73b3, type: 2}
+  ItemNote: 
   inspectModel: {fileID: 0}
+  interactionType: 0
 --- !u!65 &1350424360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2107,6 +2109,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1540237070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5706780623795447295, guid: ad6580d1a3ea5ce49840a202eb6e8341, type: 3}
+  m_PrefabInstance: {fileID: 7551596657350528478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1584918364
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,9 +2148,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   id: 0
-  itemText: <br>you found a item 3
-  Inspect: 0
+  ItemDialogue: {fileID: 11400000, guid: fc226456063b0ff419b91f6a3dba73b3, type: 2}
+  ItemNote: 
   inspectModel: {fileID: 0}
+  interactionType: 0
 --- !u!65 &1584918366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2468,6 +2476,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669382122}
   m_CullTransparentMesh: 1
+--- !u!1 &1692148582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6446889066127283418, guid: ad6580d1a3ea5ce49840a202eb6e8341, type: 3}
+  m_PrefabInstance: {fileID: 7551596657350528478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1884862240
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,9 +3254,25 @@ PrefabInstance:
       value: item
       objectReference: {fileID: 0}
     - target: {fileID: 4239473732816309143, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
+      propertyPath: inspect
+      value: 
+      objectReference: {fileID: 1540237070}
+    - target: {fileID: 4239473732816309143, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
+      propertyPath: ItemNote
+      value: This is a note from that item
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239473732816309143, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
+      propertyPath: ItemDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: fc226456063b0ff419b91f6a3dba73b3, type: 2}
+    - target: {fileID: 4239473732816309143, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
       propertyPath: inspectModel
       value: 
       objectReference: {fileID: 2532490530330117132, guid: f54c031c63d2fc34aa92516c450d4892, type: 3}
+    - target: {fileID: 4239473732816309143, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
+      propertyPath: inspectObjPos
+      value: 
+      objectReference: {fileID: 1692148582}
     - target: {fileID: 5587358723342074714, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.77

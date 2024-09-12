@@ -42,7 +42,7 @@ public class Inventory : MonoBehaviour
                 if (invSlots[i].itemInSlot == null)
                 {
                     invSlots[i].itemInSlot = item;
-                    text.text += item.itemText;
+                    text.text += item.ItemNote;
                     break;
                 }
             }

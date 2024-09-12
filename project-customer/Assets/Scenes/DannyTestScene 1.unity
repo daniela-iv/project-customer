@@ -455,10 +455,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28846f9cdbad74741afd409110d5fd9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Something Idk
   id: 0
-  itemText: {fileID: 0}
-  interactionType: 0
+  ItemDialogue: {fileID: 11400000, guid: fc226456063b0ff419b91f6a3dba73b3, type: 2}
+  ItemNote: Whatever dude its a note
+  inspectModel: {fileID: 913544057}
+  inspect: {fileID: 913544057}
+  inspectObjPos: {fileID: 913544057}
+  interactionType: 1
 --- !u!65 &913544059
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -539,7 +543,7 @@ Transform:
   m_GameObject: {fileID: 913544057}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.56, y: 1.83, z: 8.28}
+  m_LocalPosition: {x: -2.52, y: 1.83, z: 7.025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -855,7 +859,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   id: 0
-  itemText: {fileID: 0}
+  ItemDialogue: {fileID: 0}
+  ItemNote: 
+  inspectModel: {fileID: 0}
+  inspect: {fileID: 0}
+  inspectObjPos: {fileID: 0}
   interactionType: 0
 --- !u!65 &1350424360
 BoxCollider:
@@ -1187,7 +1195,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   id: 0
-  itemText: {fileID: 0}
+  ItemDialogue: {fileID: 0}
+  ItemNote: 
+  inspectModel: {fileID: 0}
+  inspect: {fileID: 0}
+  inspectObjPos: {fileID: 0}
   interactionType: 0
 --- !u!65 &1584918366
 BoxCollider:
@@ -1309,7 +1321,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   id: 0
-  itemText: {fileID: 0}
+  ItemDialogue: {fileID: 0}
+  ItemNote: 
+  inspectModel: {fileID: 0}
+  inspect: {fileID: 0}
+  inspectObjPos: {fileID: 0}
   interactionType: 0
 --- !u!65 &1587506310
 BoxCollider:
@@ -1391,7 +1407,7 @@ Transform:
   m_GameObject: {fileID: 1587506308}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.77, y: 1.83, z: 11.82}
+  m_LocalPosition: {x: -3.95, y: 1.89, z: 11.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

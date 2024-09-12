@@ -120,5 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: testItem
   id: 0
-  itemText: {fileID: 0}
+  ItemDialogue: {fileID: 11400000, guid: fc226456063b0ff419b91f6a3dba73b3, type: 2}
+  ItemNote: 
+  inspectModel: {fileID: 0}
   interactionType: 0
