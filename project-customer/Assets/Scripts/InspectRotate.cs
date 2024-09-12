@@ -5,7 +5,7 @@ using UnityEngine;
 public class InspectRotate : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 100f;
+    private float speed = 5000f;
 
     private bool buttonIsPressed = false;
 

@@ -186,8 +186,8 @@ Transform:
   m_GameObject: {fileID: 7348576923927485984}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1, y: 1.4442, z: 1}
+  m_LocalScale: {x: 1, y: 1.4442, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8526660939101692394}
@@ -251,7 +251,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7348576923927485984}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 4fee0c19fb596794aaafc27ec000e5e3, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -343,9 +343,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 3408929178983980803}
   LookDistance: 7
-  inventory: {fileID: 5859132061047898739}
   inspect: {fileID: 1518009460244243577}
   inspectObjPos: {fileID: 239940103344969052}
+  inventory: {fileID: 5859132061047898739}
 --- !u!114 &5859132061047898739
 MonoBehaviour:
   m_ObjectHideFlags: 0

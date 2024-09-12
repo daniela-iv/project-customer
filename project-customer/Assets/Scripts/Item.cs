@@ -31,7 +31,7 @@ public class Item : MonoBehaviour
                 break;
 
             case InteractionType.Rotate:
-                Debug.Log("its trying iggg");
+                Debug.Log("its trying rotate");
                 if (true)
                 {
                     Debug.Log("item with rotate interact");

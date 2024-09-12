@@ -47,7 +47,7 @@ public class LookingAt : MonoBehaviour
                 {
                     Item item = hit.transform.GetComponent<Item>();
                     inventory.GetComponent<Inventory>().PickUp(hit.transform.GetComponent<Item>());
-
+                    Debug.Log("trying to interact with item");
                     item.Interact(inspect,inspectObjPos);
                 }
 
