@@ -9,4 +9,5 @@ public class Item : MonoBehaviour
     public string Name;
     public int id;
     public string itemText;
+    public bool Inspect;
 }

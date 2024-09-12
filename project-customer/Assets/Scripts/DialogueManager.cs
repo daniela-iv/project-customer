@@ -79,10 +79,14 @@ public class DialogueManager : MonoBehaviour
     public void HideDialogue()
     {
         DialogueParent.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
     private void ShowDialogue()
     {
         DialogueParent.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
 }

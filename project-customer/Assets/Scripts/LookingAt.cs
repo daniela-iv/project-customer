@@ -42,6 +42,11 @@ public class LookingAt : MonoBehaviour
                 Debug.Log("look at item");
                 if (Input.GetButtonDown("Interact"))
                 {
+                    Item item = hit.transform.GetComponent<Item>();
+                    if(item.Inspect)
+                    {
+
+                    }
                     inventory.GetComponent<Inventory>().PickUp(hit.transform.GetComponent<Item>());
                 }
                 //function to show Examining UI
