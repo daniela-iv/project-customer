@@ -10,4 +10,5 @@ public class Item : MonoBehaviour
     public int id;
     public string itemText;
     public bool Inspect;
+    public GameObject inspectModel;
 }
