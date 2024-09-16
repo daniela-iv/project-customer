@@ -14,6 +14,9 @@ public class Inventory : MonoBehaviour
 
     [SerializeField]
     private CanvasGroup journal;
+    [SerializeField]
+    private FadeScript icon;
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +45,7 @@ public class Inventory : MonoBehaviour
                 if (invSlots[i].itemInSlot == null)
                 {
                     invSlots[i].itemInSlot = item;
+                    icon.fadeIn();
                     text.text += item.ItemNote;
                     break;
                 }
