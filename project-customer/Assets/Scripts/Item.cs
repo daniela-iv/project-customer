@@ -19,7 +19,8 @@ public class Item : MonoBehaviour
     public enum InteractionType
     {
         Text,
-        Rotate
+        Rotate,
+        Switch
     }
     public void Interact(GameObject inspect, GameObject inspectObjPos)
     {
@@ -40,6 +41,10 @@ public class Item : MonoBehaviour
                     Camera.main.GetComponent<MouseLook>().CanLookAround = false;
                     GameObject.FindGameObjectWithTag("Player").GetComponent<MouseLook>().CanLookAround = false;
                 }
+                break;
+            case InteractionType.Switch:
+                Debug.Log("item with switch interact");
+                GameManager.Instance.SecondStage();
                 break;
         }
     }
