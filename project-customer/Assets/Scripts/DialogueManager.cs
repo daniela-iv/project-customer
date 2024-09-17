@@ -123,7 +123,7 @@ public class DialogueManager : MonoBehaviour
 
     private bool InventoryContains(string tag)
     {
-        foreach (ItemSlot slot in itemSlots) while (slot != null)
+        foreach (ItemSlot slot in itemSlots) while (slot.itemInSlot != null)
             {
 
                 if (slot.itemInSlot.id == tag) return true;
