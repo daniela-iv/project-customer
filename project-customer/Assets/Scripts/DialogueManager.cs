@@ -185,6 +185,7 @@ public class DialogueManager : MonoBehaviour
                     {
                         node.playedNegativeDialogue = true;
 
+                        print(response.RequiredObjectTag);
                         if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
                         {
 
@@ -221,6 +222,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (!response.NextNode.IsLastNode())
         {
+            print("test1");
             response.NextNode.speakerName = title;
             StartDialogue(title, response.NextNode,italicize);
         }

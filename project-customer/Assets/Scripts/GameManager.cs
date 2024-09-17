@@ -103,11 +103,14 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (false) //rep kid and mom 1 or mom 1
+            DialogueManager dialogueManager = DialogueManager.Instance;
+            bool momRep = dialogueManager.GetReputation("Mom");
+            bool sonRep = dialogueManager.GetReputation("Child");
+            if (momRep && sonRep) //rep kid and mom 1 or mom 1
             {
                 end1.SetActive(true);
             }
-            else if (false) //rep kid 1
+            else if (momRep) //rep kid 1
             {
                 end2.SetActive(true);
             }

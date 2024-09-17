@@ -31,13 +31,13 @@ public class DialogueNode : iFollowReputation
 
     public void SetReputation(bool reputationValue)
     {
-        GameObject.FindObjectOfType<DialogueManager>().SetReputation(speakerName, reputationValue);
+        DialogueManager.Instance.SetReputation(speakerName, reputationValue);
         Debug.Log("Positive reputation has changed to " + reputationValue);
     }
 
    public bool IsLastNode()
     {
-        if (GameObject.FindObjectOfType<DialogueManager>().GetReputation(speakerName))
+        if (DialogueManager.Instance.GetReputation(speakerName))
         {
             if (positiveReputationDialogue.Count() <= 1) { return true; }
         }
