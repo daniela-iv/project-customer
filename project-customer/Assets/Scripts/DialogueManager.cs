@@ -31,14 +31,6 @@ public class DialogueManager : MonoBehaviour
         positiveReputation = true;
     }
 
-    public void FreezePlayer(bool doFreeze)
-    {
-        Debug.Log("Player frozen: " + doFreeze);
-        inDialogue = doFreeze;
-        player.GetComponent<MouseLook>().CanLookAround = !doFreeze;
-        Camera.main.GetComponent<MouseLook>().CanLookAround = !doFreeze;
-    }
-
     public void StartDialogue(string title, DialogueNode node, bool italicize = false)
     {
         FreezePlayer(true);
@@ -93,5 +85,11 @@ public class DialogueManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
-
+    public void FreezePlayer(bool doFreeze)
+    {
+        Debug.Log("Player frozen: " + doFreeze);
+        inDialogue = doFreeze;
+        player.GetComponent<MouseLook>().CanLookAround = !doFreeze;
+        Camera.main.GetComponent<MouseLook>().CanLookAround = !doFreeze;
+    }
 }
