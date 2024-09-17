@@ -5,5 +5,6 @@ using UnityEngine;
 public class DialogueResponse
 {
     public string ResponseText;
+    public string RequiredObjectTag;
     public DialogueNode NextNode;
 }

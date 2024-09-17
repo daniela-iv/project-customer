@@ -1060,7 +1060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8679937795038804875, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.109398
+      value: 9.77
       objectReference: {fileID: 0}
     - target: {fileID: 8679937795038804875, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1503,7 +1503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4954001017284996925, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.24
+      value: 5.35
       objectReference: {fileID: 0}
     - target: {fileID: 4954001017284996925, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1624,9 +1624,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 178266246}
     - target: {fileID: 6746648100438242704, guid: b8bc72d13bd66664da91070b425aaf07, type: 3}
-      propertyPath: ResponseButtonPrefab
-      value: 
-      objectReference: {fileID: 1554557904290832486, guid: e6c1121a853e20341814f79719493525, type: 3}
+      propertyPath: startingReputation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6746648100438242704, guid: b8bc72d13bd66664da91070b425aaf07, type: 3}
       propertyPath: ResponseButtonContainer
       value: 
@@ -3197,7 +3197,7 @@ PrefabInstance:
     - target: {fileID: 4239473732816309143, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
       propertyPath: ItemDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: d0c649a20372c0d48b1c17aa95156f26, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4239473732816309143, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
       propertyPath: inspectModel
       value: 
@@ -3208,7 +3208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4239473732816309143, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
       propertyPath: interactionType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5587358723342074714, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3224,7 +3224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5587358723342074714, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.066
+      value: -0.58
       objectReference: {fileID: 0}
     - target: {fileID: 5587358723342074714, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
       propertyPath: m_LocalPosition.y

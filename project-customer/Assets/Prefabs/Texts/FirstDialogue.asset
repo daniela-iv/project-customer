@@ -13,33 +13,70 @@ MonoBehaviour:
   m_Name: FirstDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    DialogueText: Hello, how are you?
-    Responses:
-    - ResponseText: I'm really bad.
+    positiveReputationDialogue: Hi beautiful, whats up?
+    positiveReputationResponses:
+    - ResponseText: Nothing just being awesome with my blie item.
+      RequiredObjectTag: Blue Item
       NextNode:
-        DialogueText: Well, skill issue.
-        Responses:
-        - ResponseText: Rude.
+        positiveReputationDialogue: Ofcourse you are!
+        positiveReputationResponses:
+        - ResponseText: Haha thank you..
+          RequiredObjectTag: 
           NextNode:
-            DialogueText: 
-            Responses: []
-    - ResponseText: I'm great!
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+        negativeReputationDialogue: No actually youre ugly.
+        negativeReputationResponses:
+        - ResponseText: Wow ok rude....
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+    negativeReputationDialogue: Hi you fucking piece of shit.
+    negativeReputationResponses:
+    - ResponseText: Hi. You don't like me.
+      RequiredObjectTag: 
       NextNode:
-        DialogueText: That's great! Why?
-        Responses:
-        - ResponseText: I just won the lottery.
+        positiveReputationDialogue: Just kidding. I like you actually. 1
+        positiveReputationResponses: []
+        negativeReputationDialogue: Of course I don't. Stanky face.
+        negativeReputationResponses:
+        - ResponseText: You think I'm evil?
+          RequiredObjectTag: 
           NextNode:
-            DialogueText: Wow! Lucky.
-            Responses:
-            - ResponseText: Yeah.
-              NextNode:
-                DialogueText: 
-                Responses: []
-        - ResponseText: I just got married.
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+        - ResponseText: You think I'm smelly?
+          RequiredObjectTag: 
           NextNode:
-            DialogueText: Wow! To who?
-            Responses:
-            - ResponseText: Your mom.
+            positiveReputationDialogue: 'Just kidding. I like you actually. '
+            positiveReputationResponses:
+            - ResponseText: Ok I guess im liked...
+              RequiredObjectTag: 
               NextNode:
-                DialogueText: 
-                Responses: []
+                positiveReputationDialogue: 
+                positiveReputationResponses: []
+                negativeReputationDialogue: 
+                negativeReputationResponses: []
+            negativeReputationDialogue: Yup youre smelly.
+            negativeReputationResponses:
+            - ResponseText: Ok I guess i suck...
+              RequiredObjectTag: 
+              NextNode:
+                positiveReputationDialogue: 
+                positiveReputationResponses: []
+                negativeReputationDialogue: 
+                negativeReputationResponses: []
+    - ResponseText: Hi. You don't like me.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []

@@ -9,7 +9,7 @@ using static UnityEditor.Progress;
 public class Item : MonoBehaviour
 {
     public string Name;
-    public int id;
+    public string id;
     public Dialogue ItemDialogue;
     public string ItemNote;
     public GameObject inspectModel;

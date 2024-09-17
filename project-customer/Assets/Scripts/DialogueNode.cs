@@ -1,20 +1,31 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 [System.Serializable]
 public class DialogueNode : iFollowReputation
 {
-    public string DialogueText;
-    public List<DialogueResponse> Responses;
+   //public string DialogueText;
+   //public List<DialogueResponse> Responses;
 
-    public string positiveReputationText;
+    public string positiveReputationDialogue;
     public List<DialogueResponse> positiveReputationResponses;
+    [NonSerialized]
+    public bool playedPositiveDialogue;
 
-    public string negativeReputationText;
+    public string negativeReputationDialogue;
     public List<DialogueResponse> negativeReputationResponses;
+    [NonSerialized]
+    public bool playedNegativeDialogue;
 
+    public void Awake()
+    {
+        playedNegativeDialogue = false;
+        playedPositiveDialogue = false;
+    }
 
     public void SetReputation(bool reputationValue)
     {
@@ -22,8 +33,16 @@ public class DialogueNode : iFollowReputation
         Debug.Log("Positive reputation has changed to " + reputationValue);
     }
 
-    internal bool IsLastNode()
+   public bool IsLastNode()
     {
-        return Responses.Count <= 0;
+        if (GameObject.FindObjectOfType<DialogueManager>().positiveReputation)
+        {
+            if (positiveReputationDialogue.Count() <= 1) { return true; }
+        }
+        else
+        {
+            if (negativeReputationDialogue.Count() <= 1) { return true; }
+        }
+        return false;
     }
 }

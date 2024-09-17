@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface iFollowReputation
 {
-    public void CheckRep() { }
-    public void CheckReep() { }
+    public void SetReputation() { }
+    public void IsLastNode() { }
 
 }
