@@ -6,13 +6,16 @@ public class LookingAt : MonoBehaviour
     public Camera camera;
     private GameObject lastLookedAt;
     public float LookDistance;
-
+    [SerializeField]
+    private DialogueManager dialogueManager;
     [SerializeField]
     private GameObject inspect;
     [SerializeField]
     private GameObject inspectObjPos;
     [SerializeField]
     private Inventory inventory;
+    [SerializeField]
+    private GameObject inspectableUI;
 
     private void Awake()
     {
@@ -33,6 +36,8 @@ public class LookingAt : MonoBehaviour
             lastLookedAt.SendMessage("NotLookingAt", SendMessageOptions.DontRequireReceiver);
         }
 
+        inspectableUI.SetActive(false);
+
         Ray lookRay = new Ray(camera.transform.position, camera.transform.rotation * Vector3.forward);
         RaycastHit hit;
 
@@ -43,6 +48,9 @@ public class LookingAt : MonoBehaviour
 
             if (hit.transform.gameObject.tag == "Item")
             {
+               
+                inspectableUI.SetActive(true);
+
                 if (Input.GetButtonDown("Interact"))
                 {
                     Item item = hit.transform.GetComponent<Item>();
@@ -55,8 +63,13 @@ public class LookingAt : MonoBehaviour
             }
             else if (hit.transform.gameObject.tag == "Actor")
             {
+                inspectableUI.SetActive(true);
 
                 //fuction to show Question UI
+            }
+            if (dialogueManager.inDialogue == true)
+            {
+                inspectableUI.SetActive(false);
             }
             //dialogue logic is in actor/item script
         }

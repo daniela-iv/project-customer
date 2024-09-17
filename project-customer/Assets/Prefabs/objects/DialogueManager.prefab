@@ -50,3 +50,6 @@ MonoBehaviour:
   ResponseButtonPrefab: {fileID: 1554557904290832486, guid: e6c1121a853e20341814f79719493525, type: 3}
   ResponseButtonContainer: {fileID: 0}
   player: {fileID: 0}
+  startingReputation: 0
+  inDialogue: 0
+  positiveReputation: 1

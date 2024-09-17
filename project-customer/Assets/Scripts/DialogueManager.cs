@@ -12,7 +12,14 @@ public class DialogueManager : MonoBehaviour
     public GameObject ResponseButtonPrefab;
     public Transform ResponseButtonContainer;
     public GameObject player;
-    
+    public ItemSlot[] itemSlots { get { return player.GetComponent<Inventory>().invSlots; } private set { } }
+
+    public bool startingReputation;
+
+    [NonSerialized]
+    public bool inDialogue;
+    [NonSerialized]
+    public bool positiveReputation;
 
     private void Awake()
     {
@@ -25,21 +32,17 @@ public class DialogueManager : MonoBehaviour
             Destroy(gameObject);
         }
         HideDialogue();
-    }
-
-    public void FreezePlayer(bool doFreeze)
-    {
-        Debug.Log("Player frozen: " + doFreeze);
-        player.GetComponent<MouseLook>().CanLookAround = !doFreeze;
-        Camera.main.GetComponent<MouseLook>().CanLookAround = !doFreeze;
+        inDialogue = false;
+        positiveReputation = startingReputation;
     }
 
     public void StartDialogue(string title, DialogueNode node, bool italicize = false)
     {
         FreezePlayer(true);
+
         ShowDialogue();
+
         DialogueTitle.text = title;
-        DialogueBody.text = node.DialogueText;
 
         if (italicize)
         {
@@ -50,18 +53,83 @@ public class DialogueManager : MonoBehaviour
             DialogueBody.fontStyle = FontStyles.Normal;
         }
 
-            foreach (Transform child in ResponseButtonContainer)
-            {
-                Destroy(child.gameObject);
-            }
+        DialogueLogic(title, node, positiveReputation, italicize);
+    }
 
-        foreach (DialogueResponse response in node.Responses)
+    private void DialogueLogic(string title, DialogueNode node, bool posReputation, bool italicize)
+    {
+        if (posReputation)
         {
-            GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
-            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
-            
-            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, title, italicize));
+            if (node.playedPositiveDialogue == false)
+            {
+                DialogueBody.text = node.positiveReputationDialogue;
+
+                foreach (Transform child in ResponseButtonContainer)
+                {
+                    Destroy(child.gameObject);
+                }
+
+                foreach (DialogueResponse response in node.positiveReputationResponses)
+                {
+                    Debug.Log("Loading positive response");
+                   if( response.NextNode.playedPositiveDialogue == false){
+                        node.playedPositiveDialogue = true;
+
+                        if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
+                        {
+
+                            GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
+                            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
+
+                            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, title, italicize));
+                        }
+                    }
+                }
+            } 
         }
+        else
+        {
+            Debug.Log("Negative reputation detected");
+            DialogueBody.text = node.negativeReputationDialogue;
+            if (node.playedNegativeDialogue == false)
+            {
+                DialogueBody.text = node.negativeReputationDialogue;
+
+                foreach (Transform child in ResponseButtonContainer)
+                {
+                    Destroy(child.gameObject);
+                }
+
+                foreach (DialogueResponse response in node.negativeReputationResponses)
+                {
+                    Debug.Log("Loading negative response");
+                    if (response.NextNode.playedNegativeDialogue == false)
+                    {
+                        node.playedNegativeDialogue = true;
+
+                        if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
+                        {
+
+                            GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
+                            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
+
+                            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, title, italicize));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private bool InventoryContains(string tag)
+    {
+        foreach (ItemSlot slot in itemSlots) while (slot != null)
+            {
+
+                if (slot.itemInSlot.id == tag) return true;
+
+            }
+        return false;
     }
 
     public void SelectResponse(DialogueResponse response, string title, bool italicize = false)
@@ -88,5 +156,11 @@ public class DialogueManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
-
+    public void FreezePlayer(bool doFreeze)
+    {
+        Debug.Log("Player frozen: " + doFreeze);
+        inDialogue = doFreeze;
+        player.GetComponent<MouseLook>().CanLookAround = !doFreeze;
+        Camera.main.GetComponent<MouseLook>().CanLookAround = !doFreeze;
+    }
 }

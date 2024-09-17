@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     [SerializeField]
-    ItemSlot[] invSlots = new ItemSlot[10];
+    public ItemSlot[] invSlots = new ItemSlot[10];
 
     [SerializeField]
     private TextMeshProUGUI text;
