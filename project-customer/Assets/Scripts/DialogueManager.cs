@@ -1,7 +1,10 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -18,8 +21,15 @@ public class DialogueManager : MonoBehaviour
 
     [NonSerialized]
     public bool inDialogue;
+
+    // true = they like you
+    // false =  neutral or hateful
     [NonSerialized]
-    public bool positiveReputation;
+    public bool childReputation;
+    [NonSerialized]
+    public bool momReputation;
+    [NonSerialized]
+    public bool dadReputation;
 
     private void Awake()
     {
@@ -31,29 +41,97 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
         HideDialogue();
         inDialogue = false;
-        positiveReputation = startingReputation;
-    }
 
+        momReputation = startingReputation;
+        dadReputation = startingReputation;
+        childReputation = startingReputation;
+    }
+    public bool GetReputation(string name)
+    {
+        switch (name)
+        {
+            case "Mom":
+                return momReputation;
+            case "Dad":
+                return dadReputation;
+            case "Child":
+                return childReputation;
+        }
+        Debug.Log("Ya fucked up");
+        return true;
+    }
+    public void SetReputation(string name, bool newReputationValue)
+    {
+        switch (name)
+        {
+            case "Mom":
+                momReputation = newReputationValue;
+                break;
+            case "Dad":
+                dadReputation = newReputationValue;
+                break;
+            case "Child":
+                childReputation = newReputationValue;
+                break;
+        }
+        Debug.Log("Ya fucked up again");
+    }
     public void StartDialogue(string title, DialogueNode node, bool italicize = false)
     {
+       
+        if (ShowDialogueCheck(title, node, GetReputation(title), italicize))
+        {
         FreezePlayer(true);
 
-        ShowDialogue();
+            ShowDialogue();
 
-        DialogueTitle.text = title;
+            DialogueTitle.text = title;
 
-        if (italicize)
+            if (italicize)
+            {
+                DialogueBody.fontStyle = FontStyles.Italic;
+            }
+            else
+            {
+                DialogueBody.fontStyle = FontStyles.Normal;
+            }
+
+            DialogueLogic(title, node, GetReputation(title), italicize);
+        }
+    }
+
+    private bool ShowDialogueCheck(string title, DialogueNode node, bool posReputation, bool italicize = false)
+    {
+        if (posReputation)
         {
-            DialogueBody.fontStyle = FontStyles.Italic;
+            foreach (DialogueResponse response in node.positiveReputationResponses)
+            {
+                if (response.NextNode.playedPositiveDialogue == false)
+                {
+                    if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
+                    {
+                        return true;
+                    }
+                }
+            }
         }
         else
         {
-            DialogueBody.fontStyle = FontStyles.Normal;
+            foreach (DialogueResponse response in node.negativeReputationResponses)
+            {
+                if (response.NextNode.playedNegativeDialogue == false)
+                {
+                    if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
+                    {
+                        return true;
+                    }
+                }
+            }
         }
-
-        DialogueLogic(title, node, positiveReputation, italicize);
+        return false;
     }
 
     private void DialogueLogic(string title, DialogueNode node, bool posReputation, bool italicize)
@@ -81,7 +159,7 @@ public class DialogueManager : MonoBehaviour
                             GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
                             buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
 
-                            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, title, italicize));
+                            buttonObj.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => SelectResponse(response, title, italicize));
                         }
                     }
                 }
@@ -113,7 +191,7 @@ public class DialogueManager : MonoBehaviour
                             GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
                             buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
 
-                            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, title, italicize));
+                            buttonObj.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => SelectResponse(response, title, italicize));
                         }
                     }
                 }
@@ -123,11 +201,18 @@ public class DialogueManager : MonoBehaviour
 
     private bool InventoryContains(string tag)
     {
-        foreach (ItemSlot slot in itemSlots) while (slot.itemInSlot != null)
+        foreach (ItemSlot slot in itemSlots) 
             {
+            if (slot.itemInSlot != null)
+            {
+                Debug.Log("You have an item");
+                if (slot.itemInSlot.Name == tag)
+                {
+                    Debug.Log("You have the correct item");
 
-                if (slot.itemInSlot.id == tag) return true;
-
+                    return true;
+                }
+            }
             }
         return false;
     }
@@ -136,6 +221,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (!response.NextNode.IsLastNode())
         {
+            response.NextNode.speakerName = title;
             StartDialogue(title, response.NextNode,italicize);
         }
         else
@@ -147,14 +233,14 @@ public class DialogueManager : MonoBehaviour
     public void HideDialogue()
     {
         DialogueParent.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+        UnityEngine.Cursor.visible = false;
     }
     private void ShowDialogue()
     {
         DialogueParent.SetActive(true);
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
+        UnityEngine.Cursor.visible = true;
     }
     public void FreezePlayer(bool doFreeze)
     {
