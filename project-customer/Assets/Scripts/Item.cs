@@ -20,7 +20,8 @@ public class Item : MonoBehaviour
     {
         Text,
         Rotate,
-        Switch
+        Switch,
+        exit
     }
     public void Interact(GameObject inspect, GameObject inspectObjPos)
     {
@@ -45,6 +46,10 @@ public class Item : MonoBehaviour
             case InteractionType.Switch:
                 Debug.Log("item with switch interact");
                 GameManager.Instance.SecondStage();
+                break;
+            case InteractionType.exit:
+                Debug.Log("item with exit interact");
+                GameManager.Instance.EndGame(false);
                 break;
         }
     }

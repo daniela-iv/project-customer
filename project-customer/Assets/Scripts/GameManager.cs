@@ -22,6 +22,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject mom2;
 
+    [SerializeField]
+    private GameObject end1;
+    [SerializeField]
+    private GameObject end2;
+    [SerializeField]
+    private GameObject end3;
+
     private GameState gameState = GameState.firstStage;
 
     public enum GameState
@@ -65,5 +72,29 @@ public class GameManager : MonoBehaviour
         dad2.SetActive(true);
         mom2.SetActive(true);
         son2.SetActive(true);
+    }
+
+    public void EndGame(bool dadKickedOut)
+    {
+        Time.timeScale = 0;
+        if (dadKickedOut)
+        {
+            end3.SetActive(true);
+        }
+        else
+        {
+            if (false) //rep kid and mom 1 or mom 1
+            {
+                end1.SetActive(true);
+            }
+            else if (false) //rep kid 1
+            {
+                end2.SetActive(true);
+            }
+            else // rep kid and mom 0
+            {
+                end3.SetActive(true);
+            }
+        }
     }
 }
