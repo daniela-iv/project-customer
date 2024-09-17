@@ -12,7 +12,9 @@ public class DialogueManager : MonoBehaviour
     public GameObject ResponseButtonPrefab;
     public Transform ResponseButtonContainer;
     public GameObject player;
-    
+
+    public bool inDialogue;
+    public bool positiveReputation;
 
     private void Awake()
     {
@@ -25,11 +27,14 @@ public class DialogueManager : MonoBehaviour
             Destroy(gameObject);
         }
         HideDialogue();
+        inDialogue = false;
+        positiveReputation = true;
     }
 
     public void FreezePlayer(bool doFreeze)
     {
         Debug.Log("Player frozen: " + doFreeze);
+        inDialogue = doFreeze;
         player.GetComponent<MouseLook>().CanLookAround = !doFreeze;
         Camera.main.GetComponent<MouseLook>().CanLookAround = !doFreeze;
     }
