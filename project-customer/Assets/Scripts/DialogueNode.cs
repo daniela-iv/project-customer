@@ -8,8 +8,10 @@ using UnityEngine;
 [System.Serializable]
 public class DialogueNode : iFollowReputation
 {
-   //public string DialogueText;
-   //public List<DialogueResponse> Responses;
+    //public string DialogueText;
+    //public List<DialogueResponse> Responses;
+    [NonSerialized]
+    public string speakerName;
 
     public string positiveReputationDialogue;
     public List<DialogueResponse> positiveReputationResponses;
@@ -29,13 +31,13 @@ public class DialogueNode : iFollowReputation
 
     public void SetReputation(bool reputationValue)
     {
-        GameObject.FindObjectOfType<DialogueManager>().positiveReputation = reputationValue;
+        GameObject.FindObjectOfType<DialogueManager>().SetReputation(speakerName, reputationValue);
         Debug.Log("Positive reputation has changed to " + reputationValue);
     }
 
    public bool IsLastNode()
     {
-        if (GameObject.FindObjectOfType<DialogueManager>().positiveReputation)
+        if (GameObject.FindObjectOfType<DialogueManager>().GetReputation(speakerName))
         {
             if (positiveReputationDialogue.Count() <= 1) { return true; }
         }
