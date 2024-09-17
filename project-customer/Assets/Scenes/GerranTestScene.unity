@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: inspectModel
       value: 
       objectReference: {fileID: 2532490530330117132, guid: f54c031c63d2fc34aa92516c450d4892, type: 3}
+    - target: {fileID: 4239473732816309143, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
+      propertyPath: interactionType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5587358723342074714, guid: a025ff13e17ea8649836ea09db6ff65b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1870975
@@ -374,6 +378,7 @@ MonoBehaviour:
   end1: {fileID: 1992883270}
   end2: {fileID: 579140597}
   end3: {fileID: 466663616}
+  dadTimer: 200
 --- !u!1 &308051367
 GameObject:
   m_ObjectHideFlags: 0

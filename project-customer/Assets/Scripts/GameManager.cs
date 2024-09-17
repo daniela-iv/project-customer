@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject end3;
 
+
+    [SerializeField]
+    private float dadTimer;
+
+
     private GameState gameState = GameState.firstStage;
 
     public enum GameState
@@ -62,6 +67,21 @@ public class GameManager : MonoBehaviour
         fade.fadeIn();
 
         gameState = GameState.secondStage;
+        StartCoroutine(Timer());
+    }
+
+    private IEnumerator Timer()
+    {
+        float timer = dadTimer;
+        while (timer > 0f)
+        {
+            timer -= 1f;
+            print(timer);
+            yield return new WaitForSecondsRealtime(1f);
+        }
+        EndGame(true);
+        StopCoroutine("Timer");
+
     }
 
     public void changeCharacters()
