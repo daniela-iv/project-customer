@@ -46,7 +46,7 @@ public class Inventory : MonoBehaviour
                 {
                     invSlots[i].itemInSlot = item;
                     icon.fadeIn();
-                    text.text += item.ItemNote;
+                    text.text += "<BR>" + item.ItemNote;
                     break;
                 }
             }
