@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba17766de0eca3d4caca8a1c663adcee, type: 3}
+  m_Name: ChildDialogue
+  m_EditorClassIdentifier: 
+  RootNode:
+    positiveReputationDialogue: Hi cool person.
+    positiveReputationResponses:
+    - ResponseText: Hi cool kid. I have these bandages.
+      RequiredObjectTag: Bandages
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Hi cool kid. I have these pills.
+      RequiredObjectTag: Pills
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Hi cool kid. I have these cigarettes.
+      RequiredObjectTag: Cigarettes
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Hi cool kid. I saw your portrait.
+      RequiredObjectTag: Portrait
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    negativeReputationDialogue: Hi ugly person.
+    negativeReputationResponses:
+    - ResponseText: Hi ugly kid. I have these bandages.
+      RequiredObjectTag: Bandages
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Hi ugly kid. I have these pills
+      RequiredObjectTag: Pills
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Hi ugly kid. I have these cigarettes.
+      RequiredObjectTag: Cigarettes
+      NextNode:
+        positiveReputationDialogue: Wow I love cigarettes!
+        positiveReputationResponses:
+        - ResponseText: Ok. Bye...
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        negativeReputationDialogue: Ugh. I hate cigarettes.
+        negativeReputationResponses:
+        - ResponseText: Ok. Bye.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 1
+        changeReputationTo: 1
+    - ResponseText: Hi ugly kid. I saw the portrait.
+      RequiredObjectTag: Portrait
+      NextNode:
+        positiveReputationDialogue: Wow awesome! I love that portrait.
+        positiveReputationResponses:
+        - ResponseText: Yup. Bye.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 1
+        changeReputationTo: 1
+    changeReputation: 0
+    changeReputationTo: 0

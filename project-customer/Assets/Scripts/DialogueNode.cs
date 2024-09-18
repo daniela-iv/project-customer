@@ -30,22 +30,17 @@ public class DialogueNode : iFollowReputation
         playedPositiveDialogue = false;
     }
 
-    public void SetReputation(bool reputationValue)
+    public bool IsLastPositiveNode()
     {
-        GameObject.FindObjectOfType<DialogueManager>().SetReputation(speakerName, reputationValue);
-        Debug.Log("Positive reputation has changed to " + reputationValue);
+
+        if (positiveReputationDialogue.Count() <= 0) { return true; }
+        else return false;
+    }
+    public bool IsLastNegativeNode()
+    {
+
+        if (negativeReputationDialogue.Count() <= 0) { return true; }
+        else return false;
     }
 
-   public bool IsLastNode()
-    {
-        if (GameObject.FindObjectOfType<DialogueManager>().GetReputation(speakerName))
-        {
-            if (positiveReputationDialogue.Count() <= 1) { return true; }
-        }
-        else
-        {
-            if (negativeReputationDialogue.Count() <= 1) { return true; }
-        }
-        return false;
-    }
 }
