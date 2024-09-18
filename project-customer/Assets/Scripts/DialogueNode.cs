@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 [System.Serializable]
@@ -23,6 +22,8 @@ public class DialogueNode : iFollowReputation
     [NonSerialized]
     public bool playedNegativeDialogue;
 
+    public bool changeReputation;
+    public bool changeReputationTo;
     public void Awake()
     {
         playedNegativeDialogue = false;

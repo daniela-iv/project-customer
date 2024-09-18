@@ -222,6 +222,10 @@ public class DialogueManager : MonoBehaviour
         if (!response.NextNode.IsLastNode())
         {
             response.NextNode.speakerName = title;
+            if (response.NextNode.changeReputation)
+            {
+                response.NextNode.SetReputation(response.NextNode.changeReputationTo);
+            }
             StartDialogue(title, response.NextNode,italicize);
         }
         else
