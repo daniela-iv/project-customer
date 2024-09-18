@@ -9,7 +9,6 @@ using static UnityEditor.Progress;
 public class Item : MonoBehaviour
 {
     public string Name;
-    public int id;
     public Dialogue ItemDialogue;
     public string ItemNote;
     public GameObject inspectModel;
@@ -19,7 +18,9 @@ public class Item : MonoBehaviour
     public enum InteractionType
     {
         Text,
-        Rotate
+        Rotate,
+        Switch,
+        exit
     }
     public void Interact(GameObject inspect, GameObject inspectObjPos)
     {
@@ -40,6 +41,14 @@ public class Item : MonoBehaviour
                     Camera.main.GetComponent<MouseLook>().CanLookAround = false;
                     GameObject.FindGameObjectWithTag("Player").GetComponent<MouseLook>().CanLookAround = false;
                 }
+                break;
+            case InteractionType.Switch:
+                Debug.Log("item with switch interact");
+                GameManager.Instance.SecondStage();
+                break;
+            case InteractionType.exit:
+                Debug.Log("item with exit interact");
+                GameManager.Instance.EndGame(false);
                 break;
         }
     }

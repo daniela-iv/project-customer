@@ -7,13 +7,16 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     [SerializeField]
-    ItemSlot[] invSlots = new ItemSlot[10];
+    public ItemSlot[] invSlots = new ItemSlot[10];
 
     [SerializeField]
     private TextMeshProUGUI text;
 
     [SerializeField]
     private CanvasGroup journal;
+    [SerializeField]
+    private FadeScript icon;
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +45,8 @@ public class Inventory : MonoBehaviour
                 if (invSlots[i].itemInSlot == null)
                 {
                     invSlots[i].itemInSlot = item;
-                    text.text += item.ItemNote;
+                    icon.fadeIn();
+                    text.text += "<BR>" + item.ItemNote;
                     break;
                 }
             }
