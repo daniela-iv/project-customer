@@ -1,3 +1,4 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using System;
 using System.Data.Common;
 using System.Security.Cryptography.X509Certificates;
@@ -33,6 +34,9 @@ public class DialogueManager : MonoBehaviour
     public bool momReputation;
     [NonSerialized]
     public bool dadReputation;
+
+    [SerializeField]
+    private UnityEngine.UI.Image portrait;
 
     private void Awake()
     {
@@ -167,6 +171,7 @@ public class DialogueManager : MonoBehaviour
             if (node.playedPositiveDialogue == false)
             {
                 DialogueBody.text = node.positiveReputationDialogue;
+                portrait.sprite = actor.positiveFace;
 
                 foreach (Transform child in ResponseButtonContainer)
                 {
@@ -201,6 +206,7 @@ public class DialogueManager : MonoBehaviour
             if (node.playedNegativeDialogue == false)
             {
                 DialogueBody.text = node.negativeReputationDialogue;
+                portrait.sprite = actor.negativeFace;
 
                 foreach (Transform child in ResponseButtonContainer)
                 {
