@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class Item : MonoBehaviour
 {
@@ -14,6 +13,7 @@ public class Item : MonoBehaviour
     public GameObject inspectModel;
 
     public InteractionType interactionType;
+    private bool isItem = true;
 
     public enum InteractionType
     {
@@ -26,7 +26,7 @@ public class Item : MonoBehaviour
         {
             case InteractionType.Text:
                 Debug.Log("item with text interact");
-                DialogueManager.Instance.StartDialogue(Name, ItemDialogue.RootNode, true);
+                DialogueManager.Instance.StartDialogue(Name, ItemDialogue.RootNode, true, true);
                 break;
 
             case InteractionType.Rotate:

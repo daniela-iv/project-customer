@@ -49,6 +49,11 @@ public class DialogueManager : MonoBehaviour
         dadReputation = startingReputation;
         childReputation = startingReputation;
     }
+    public bool IsItem(string name)
+    {
+        if(name == "Child" ||  name == "Dad" || name == "Mom") return false;
+        return true;
+    }
     public bool GetReputation(string name)
     {
         switch (name)
@@ -60,8 +65,8 @@ public class DialogueManager : MonoBehaviour
             case "Child":
                 return childReputation;
         }
-        Debug.Log("Ya fucked up");
-        return true;
+        Debug.Log("Ya fucked up GET REPUTATION");
+        return false;
     }
     public void SetReputation(string name, bool newReputationValue)
     {
@@ -77,9 +82,9 @@ public class DialogueManager : MonoBehaviour
                 childReputation = newReputationValue;
                 break;
         }
-        Debug.Log("Ya fucked up again");
+        Debug.Log("Ya fucked up set reputation");
     }
-    public void StartDialogue(string title, DialogueNode node, bool italicize = false)
+    public void StartDialogue(string title, DialogueNode node, bool isItem, bool italicize = false)
     {
        
         if (ShowDialogueCheck(title, node, GetReputation(title), italicize))
@@ -103,13 +108,15 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private bool ShowDialogueCheck(string title, DialogueNode node, bool posReputation, bool italicize = false)
+    private bool ShowDialogueCheck(string title, DialogueNode node, bool posReputation, bool isItem, bool italicize = false)
     {
+        if (isItem) return true;
+
         if (posReputation)
         {
             foreach (DialogueResponse response in node.positiveReputationResponses)
             {
-                if (response.NextNode.playedPositiveDialogue == false)
+                if (response.NextNode.playedPositiveDialogue == false && !response.NextNode.IsLastNode())
                 {
                     if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
                     {
@@ -133,7 +140,7 @@ public class DialogueManager : MonoBehaviour
         }
         return false;
     }
-
+    
     private void DialogueLogic(string title, DialogueNode node, bool posReputation, bool italicize)
     {
         if (posReputation)
@@ -187,10 +194,8 @@ public class DialogueManager : MonoBehaviour
 
                         if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
                         {
-
                             GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
                             buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
-
                             buttonObj.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => SelectResponse(response, title, italicize));
                         }
                     }
@@ -224,7 +229,7 @@ public class DialogueManager : MonoBehaviour
             response.NextNode.speakerName = title;
             if (response.NextNode.changeReputation)
             {
-                response.NextNode.SetReputation(response.NextNode.changeReputationTo);
+               if(!IsItem(title)) response.NextNode.SetReputation(response.NextNode.changeReputationTo);
             }
             StartDialogue(title, response.NextNode,italicize);
         }
