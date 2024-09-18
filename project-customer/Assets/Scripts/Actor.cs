@@ -10,8 +10,8 @@ public class Actor : MonoBehaviour, iLookReciever
     public Dialogue Dialogue;
     private bool isLookingAt;
     public bool italicize;
-    public UnityEngine.UI.Image positiveFace;
-    public UnityEngine.UI.Image negativeFace;
+    public Sprite positiveFace;
+    public Sprite negativeFace;
 
     [NonSerialized]
     public bool reputation;
