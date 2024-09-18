@@ -45,6 +45,24 @@ MonoBehaviour:
     - ResponseText: Hi cool kid. I saw your portrait.
       RequiredObjectTag: Portrait
       NextNode:
+        positiveReputationDialogue: Really? Nice!
+        positiveReputationResponses:
+        - ResponseText: Yeah bye.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Leave.
+      RequiredObjectTag: 
+      NextNode:
         positiveReputationDialogue: 
         positiveReputationResponses: []
         negativeReputationDialogue: 
@@ -97,9 +115,27 @@ MonoBehaviour:
             changeReputation: 0
             changeReputationTo: 0
         changeReputation: 1
-        changeReputationTo: 1
+        changeReputationTo: 0
     - ResponseText: Hi ugly kid. I saw the portrait.
       RequiredObjectTag: Portrait
+      NextNode:
+        positiveReputationDialogue: Wow awesome! I love that portrait.
+        positiveReputationResponses:
+        - ResponseText: Yup. Bye.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 1
+        changeReputationTo: 1
+    - ResponseText: Leave.
+      RequiredObjectTag: 
       NextNode:
         positiveReputationDialogue: Wow awesome! I love that portrait.
         positiveReputationResponses:

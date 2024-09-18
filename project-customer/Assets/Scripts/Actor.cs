@@ -13,11 +13,13 @@ public class Actor : MonoBehaviour, iLookReciever
     public UnityEngine.UI.Image positiveFace;
     public UnityEngine.UI.Image negativeFace;
 
+    [NonSerialized]
     public bool reputation;
+    public bool startingReputation;
 
     private void Awake()
     {
-        reputation = false;
+        reputation = startingReputation;
     }
     private void Update()
     {

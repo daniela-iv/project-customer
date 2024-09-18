@@ -57,12 +57,12 @@ public class DialogueManager : MonoBehaviour
     {
         if (node.IsLastPositiveNode() && node.IsLastNegativeNode())
         {
-            Debug.Log("Cant start dialogue - last nodes");
+            Debug.Log("Cant start actor dialogue - last nodes");
             HideDialogue();
         }
         else
         {
-                    StartActorDialogue(actor, node, false); 
+            StartActorDialogue(actor, node, false);
         }
     }
     public void StartDialogue(Item item, DialogueNode node, bool isItem, bool italicize = false)
@@ -207,8 +207,6 @@ public class DialogueManager : MonoBehaviour
                     Destroy(child.gameObject);
                 }
 
-                Debug.Log("Loading negative responses");
-
                 foreach (DialogueResponse response in node.negativeReputationResponses)
                 {
                     if (response.NextNode.playedNegativeDialogue == false)
@@ -243,15 +241,14 @@ public class DialogueManager : MonoBehaviour
             isLastNode= response.NextNode.IsLastNegativeNode();
         }
 
+        if (response.NextNode.changeReputation)
+        {
+            Debug.Log(actor.Name + "    is changing reputation to    " + response.NextNode.changeReputation);
+            actor.SetReputation(response.NextNode.changeReputationTo);
+        }
+
         if (!isLastNode)
         {
-
-            Debug.Log(actor.Name + "    is changing reputation to    " + response.NextNode.changeReputation);
-            if (response.NextNode.changeReputation)
-            {
-               actor.SetReputation(response.NextNode.changeReputationTo);
-            }
-
             response.NextNode.speakerName = actor.Name;
             StartActorDialogue(actor, response.NextNode, italicize);
         }

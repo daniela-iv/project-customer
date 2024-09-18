@@ -2462,6 +2462,10 @@ PrefabInstance:
       propertyPath: positiveFace
       value: 
       objectReference: {fileID: 2800000, guid: 1c3d619d399d2674a9e8d5be18a73fd4, type: 3}
+    - target: {fileID: 800554902488020300, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
+      propertyPath: startingReputation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1272926929046355776, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: m_Name
       value: NPC

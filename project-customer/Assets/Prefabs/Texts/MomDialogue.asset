@@ -14,8 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RootNode:
     positiveReputationDialogue: Can I help you sweetie?
-    positiveReputationResponses: []
+    positiveReputationResponses:
+    - ResponseText: Nope.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
     negativeReputationDialogue: Hi idiot.
-    negativeReputationResponses: []
+    negativeReputationResponses:
+    - ResponseText: Hi cutie.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 1
+        changeReputationTo: 1
     changeReputation: 0
     changeReputationTo: 0
