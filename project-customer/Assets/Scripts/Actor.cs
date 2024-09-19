@@ -10,12 +10,17 @@ public class Actor : MonoBehaviour, iLookReciever
     public Dialogue Dialogue;
     private bool isLookingAt;
     public bool italicize;
+    public Sprite positiveFace;
+    public Sprite negativeFace;
 
-    void SpeakWith()
+    [NonSerialized]
+    public bool reputation;
+    public bool startingReputation;
+
+    private void Awake()
     {
-        DialogueManager.Instance.StartDialogue(Name, Dialogue.RootNode, italicize);
+        reputation = startingReputation;
     }
-
     private void Update()
     {
         if (isLookingAt)
@@ -27,6 +32,19 @@ public class Actor : MonoBehaviour, iLookReciever
         }
     }
 
+    void SpeakWith()
+    {
+        DialogueManager.Instance.StartDialogue(this, Dialogue.RootNode, italicize);
+    }
+    public void SetDialogue()
+    {
+
+    }
+    public void SetReputation(bool reputationValue)
+    {
+        reputation = reputationValue;
+        Debug.Log("Reputation has changed to " + reputationValue);
+    }
     public void LookingAt()
     {
         isLookingAt = true;
@@ -34,7 +52,5 @@ public class Actor : MonoBehaviour, iLookReciever
     public void NotLookingAt()
     {
         isLookingAt= false;
-        Console.WriteLine("youre not looking at the npc!!");
-
     }
 }

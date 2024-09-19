@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 [System.Serializable]
@@ -23,28 +22,25 @@ public class DialogueNode : iFollowReputation
     [NonSerialized]
     public bool playedNegativeDialogue;
 
+    public bool changeReputation;
+    public bool changeReputationTo;
     public void Awake()
     {
         playedNegativeDialogue = false;
         playedPositiveDialogue = false;
     }
 
-    public void SetReputation(bool reputationValue)
+    public bool IsLastPositiveNode()
     {
-        DialogueManager.Instance.SetReputation(speakerName, reputationValue);
-        Debug.Log("Positive reputation has changed to " + reputationValue);
+
+        if (positiveReputationDialogue.Count() <= 0) { return true; }
+        else return false;
+    }
+    public bool IsLastNegativeNode()
+    {
+
+        if (negativeReputationDialogue.Count() <= 0) { return true; }
+        else return false;
     }
 
-   public bool IsLastNode()
-    {
-        if (DialogueManager.Instance.GetReputation(speakerName))
-        {
-            if (positiveReputationDialogue.Count() <= 1) { return true; }
-        }
-        else
-        {
-            if (negativeReputationDialogue.Count() <= 1) { return true; }
-        }
-        return false;
-    }
 }
