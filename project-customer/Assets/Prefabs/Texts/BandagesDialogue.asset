@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BandagesDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: You see bandages.
+    positiveReputationDialogue: You notice a couple bandages in the trash.
     positiveReputationResponses:
     - ResponseText: Rotate the bandage.
       RequiredObjectTag: 

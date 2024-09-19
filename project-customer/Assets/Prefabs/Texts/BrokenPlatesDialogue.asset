@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba17766de0eca3d4caca8a1c663adcee, type: 3}
-  m_Name: CigaretteDialogue
+  m_Name: BrokenPlatesDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: You notice a pack of cigarettes in the child's bedroom.
+    positiveReputationDialogue: A couple broken dishes are laid on the counter.
     positiveReputationResponses:
-    - ResponseText: Put them back.
+    - ResponseText: Leave.
       RequiredObjectTag: 
       NextNode:
         positiveReputationDialogue: 

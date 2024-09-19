@@ -714,13 +714,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: Name
-      value: Perscription Pills
+      value: Prescription Pills
       objectReference: {fileID: 0}
     - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: ItemNote
       value: These are Linda's. I wonder what she's going through to be prescribed
         such doses.
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: ItemDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 0d15e0630c85bc64b98fa7428ed84fac, type: 2}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: pill-bottle
@@ -2637,6 +2641,10 @@ PrefabInstance:
       propertyPath: Name
       value: Child
       objectReference: {fileID: 0}
+    - target: {fileID: 800554902488020300, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
+      propertyPath: Dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 89aa47aa91fb223489afa21a74118f7b, type: 2}
     - target: {fileID: 1272926929046355776, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: m_Name
       value: Son1
@@ -2982,6 +2990,10 @@ PrefabInstance:
       propertyPath: ItemNote
       value: Broken plates in the trash. Could be from a fight.
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: ItemDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e98cc616ae213a47991a912af8fd943, type: 2}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: broken-plates
@@ -3018,15 +3030,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3468176440186932341, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.66
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 3468176440186932341, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.03
+      value: -2.13
       objectReference: {fileID: 0}
     - target: {fileID: 3468176440186932341, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.13
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3468176440186932341, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3096,7 +3108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &512527025
 Transform:
   m_ObjectHideFlags: 0
@@ -3714,6 +3726,10 @@ PrefabInstance:
       propertyPath: ItemNote
       value: Looks like someone had some serious injuries recently.
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: ItemDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 0ebe845a235de5145b9133c36db94b02, type: 2}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: bloody-bandages
@@ -4168,7 +4184,7 @@ PrefabInstance:
     - target: {fileID: 6746648100438242704, guid: b8bc72d13bd66664da91070b425aaf07, type: 3}
       propertyPath: ResponseButtonContainer
       value: 
-      objectReference: {fileID: 1635466143}
+      objectReference: {fileID: 0}
     - target: {fileID: 8787178780869443432, guid: b8bc72d13bd66664da91070b425aaf07, type: 3}
       propertyPath: m_Name
       value: DialogueManager
@@ -4913,6 +4929,10 @@ PrefabInstance:
       propertyPath: Name
       value: Dad
       objectReference: {fileID: 0}
+    - target: {fileID: 800554902488020300, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
+      propertyPath: Dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 8c8ff685b0b56ca4cb650e2fcabf8b66, type: 2}
     - target: {fileID: 1272926929046355776, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: m_Name
       value: Dad1
@@ -7900,6 +7920,10 @@ PrefabInstance:
       propertyPath: ItemNote
       value: A pack of cigarettes. Looks like there's a few missing too.
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: ItemDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1a9cc3259b764fd4887d7919f4540d39, type: 2}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: cig-pack
@@ -8589,7 +8613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8338233857240442391, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8675234471494638545, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8612,11 +8636,6 @@ PrefabInstance:
 --- !u!1 &1635466142 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8005006985822361842, guid: a127815800f47c1469146a264be8ae19, type: 3}
-  m_PrefabInstance: {fileID: 1635466141}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1635466143 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 967594197582702678, guid: a127815800f47c1469146a264be8ae19, type: 3}
   m_PrefabInstance: {fileID: 1635466141}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1635466144 stripped
@@ -10603,6 +10622,10 @@ PrefabInstance:
       propertyPath: ItemNote
       value: I wonder why Ethan isn't smiling in any of the family photos.
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: ItemDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 0302eeca575ac6845aa61dc610ccb0e3, type: 2}
     - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: inspectModel
       value: 

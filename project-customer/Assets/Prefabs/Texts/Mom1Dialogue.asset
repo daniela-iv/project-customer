@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba17766de0eca3d4caca8a1c663adcee, type: 3}
-  m_Name: CigaretteDialogue
+  m_Name: Mom1Dialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: You notice a pack of cigarettes in the child's bedroom.
+    positiveReputationDialogue: Can I help you sweetie?
     positiveReputationResponses:
-    - ResponseText: Put them back.
+    - ResponseText: Nope.
       RequiredObjectTag: 
       NextNode:
         positiveReputationDialogue: 
@@ -24,7 +24,16 @@ MonoBehaviour:
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    negativeReputationDialogue: 
-    negativeReputationResponses: []
+    negativeReputationDialogue: Hi idiot.
+    negativeReputationResponses:
+    - ResponseText: Hi cutie.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 1
+        changeReputationTo: 1
     changeReputation: 0
     changeReputationTo: 0
