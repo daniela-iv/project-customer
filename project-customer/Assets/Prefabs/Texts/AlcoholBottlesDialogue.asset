@@ -10,20 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba17766de0eca3d4caca8a1c663adcee, type: 3}
-  m_Name: CigaretteDialogue
+  m_Name: AlcoholBottlesDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: You notice a pack of cigarettes in the child's bedroom.
-    positiveReputationResponses:
-    - ResponseText: Put them back.
-      RequiredObjectTag: 
-      NextNode:
-        positiveReputationDialogue: 
-        positiveReputationResponses: []
-        negativeReputationDialogue: 
-        negativeReputationResponses: []
-        changeReputation: 0
-        changeReputationTo: 0
+    positiveReputationDialogue: 'A bunch of empty alcohol bottles in the closet. '
+    positiveReputationResponses: []
     negativeReputationDialogue: 
     negativeReputationResponses: []
     changeReputation: 0

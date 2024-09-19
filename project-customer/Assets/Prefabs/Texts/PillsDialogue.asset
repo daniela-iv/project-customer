@@ -13,8 +13,18 @@ MonoBehaviour:
   m_Name: PillsDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: 
-    positiveReputationResponses: []
+    positiveReputationDialogue: A pack of prescription pills on the bedside table.
+      It seems to be the mother's.
+    positiveReputationResponses:
+    - ResponseText: Leave.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
     negativeReputationDialogue: 
     negativeReputationResponses: []
     changeReputation: 0
