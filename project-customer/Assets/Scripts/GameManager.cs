@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
     public void SecondStage()
     {
         fade.fadeIn();
-
+        print("changed stage");
         gameState = GameState.secondStage;
         StartCoroutine(Timer());
     }
@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
 
     public void changeCharacters()
     {
+
         dad1.SetActive(false);
         mom1.SetActive(false);
         son1.SetActive(false);
