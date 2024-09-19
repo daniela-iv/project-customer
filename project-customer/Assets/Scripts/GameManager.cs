@@ -75,6 +75,9 @@ public class GameManager : MonoBehaviour
         float timer = dadTimer;
         while (timer > 0f)
         {
+            if(timer < dadTimer - 4f)
+                changeCharacters();
+
             timer -= 1f;
             print(timer);
             yield return new WaitForSecondsRealtime(1f);

@@ -55,7 +55,6 @@ public class FadeScript : MonoBehaviour
     private IEnumerator Timer()
     { 
         float timer = timeBeforeFadeOut;
-        GameManager.Instance.changeCharacters();
         while (timer > 0f)
         {
             timer -= 0.01f;
