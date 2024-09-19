@@ -89,6 +89,9 @@ public class GameManager : MonoBehaviour
         dad1.SetActive(false);
         mom1.SetActive(false);
         son1.SetActive(false);
+        mom2.GetComponent<Actor>().reputation = mom1.GetComponent<Actor>().reputation;
+        dad2.GetComponent<Actor>().reputation= dad1.GetComponent<Actor>().reputation;
+        son2.GetComponent<Actor>().reputation= son1.GetComponent<Actor>().reputation;
         dad2.SetActive(true);
         mom2.SetActive(true);
         son2.SetActive(true);
@@ -104,8 +107,11 @@ public class GameManager : MonoBehaviour
         else
         {
             DialogueManager dialogueManager = DialogueManager.Instance;
-            bool momRep = dialogueManager.GetReputation("Mom");
-            bool sonRep = dialogueManager.GetReputation("Child");
+            bool momRep = mom2.GetComponent<Actor>().reputation;
+            bool sonRep = son2.GetComponent<Actor>().reputation;
+
+            print(momRep + " < mom rep ! ending ! son rep > " + sonRep);
+
             if (momRep && sonRep) //rep kid and mom 1 or mom 1
             {
                 end1.SetActive(true);

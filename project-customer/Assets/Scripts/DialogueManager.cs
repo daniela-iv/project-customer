@@ -28,12 +28,6 @@ public class DialogueManager : MonoBehaviour
 
     // true = they like you
     // false =  neutral or hateful
-    [NonSerialized]
-    public bool childReputation;
-    [NonSerialized]
-    public bool momReputation;
-    [NonSerialized]
-    public bool dadReputation;
 
     [SerializeField]
     private UnityEngine.UI.Image portrait;
@@ -51,10 +45,6 @@ public class DialogueManager : MonoBehaviour
 
         HideDialogue();
         inDialogue = false;
-
-        momReputation = startingReputation;
-        dadReputation = startingReputation;
-        childReputation = startingReputation;
     }
 
     public void StartDialogue(Actor actor, DialogueNode node, bool isItem, bool italicize = false)
