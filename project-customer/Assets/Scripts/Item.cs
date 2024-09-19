@@ -33,7 +33,7 @@ public class Item : MonoBehaviour
 
             case InteractionType.Rotate:
                 Debug.Log("its trying rotate");
-                if (true)
+                if (!inspect.activeSelf)
                 {
                     Debug.Log("item with rotate interact");
                     inspect.SetActive(true);
