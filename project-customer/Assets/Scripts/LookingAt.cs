@@ -17,6 +17,8 @@ public class LookingAt : MonoBehaviour
     [SerializeField]
     private GameObject inspectableUI;
 
+    private bool isInspecting;
+
     private void Awake()
     {
     }
@@ -48,8 +50,8 @@ public class LookingAt : MonoBehaviour
 
             if (hit.transform.gameObject.tag == "Item")
             {
-               
-                inspectableUI.SetActive(true);
+                if(!isInspecting)
+                    inspectableUI.SetActive(true);
 
                 if (Input.GetButtonDown("Interact"))
                 {
@@ -57,6 +59,7 @@ public class LookingAt : MonoBehaviour
                     inventory.GetComponent<Inventory>().PickUp(hit.transform.GetComponent<Item>());
                     Debug.Log("trying to interact with item");
                     item.Interact(inspect,inspectObjPos);
+                    isInspecting = true;
                 }
 
                 //function to show Examining UI
@@ -72,6 +75,10 @@ public class LookingAt : MonoBehaviour
                 inspectableUI.SetActive(false);
             }
             //dialogue logic is in actor/item script
+        }
+        else
+        {
+            isInspecting = false;
         }
     }
 }
