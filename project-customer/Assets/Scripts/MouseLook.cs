@@ -37,9 +37,6 @@ public class MouseLook : MonoBehaviour
         euler.x = Mathf.Clamp(euler.x, -maxVerticalAngle, maxVerticalAngle);
 
         rotation= new Vector2(euler.x, euler.y);
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     private Vector2 GetInput()
