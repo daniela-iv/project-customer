@@ -53,4 +53,9 @@ public class Actor : MonoBehaviour, iLookReciever
     {
         isLookingAt= false;
     }
+
+    public void ChangeDialogue(Dialogue newDialogue)
+    {
+        Dialogue = newDialogue;
+    }
 }
