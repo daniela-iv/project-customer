@@ -721,6 +721,10 @@ PrefabInstance:
       value: These are Linda's. I wonder what she's going through to be prescribed
         such doses.
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: inspectModel
+      value: 
+      objectReference: {fileID: 2654647055476963142, guid: f567e7ed8f993a14c8e5398e5260cc66, type: 3}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: pill-bottle
@@ -2982,6 +2986,10 @@ PrefabInstance:
       propertyPath: ItemNote
       value: Broken plates in the trash. Could be from a fight.
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: inspectModel
+      value: 
+      objectReference: {fileID: 8400448718183617971, guid: 677d52bd834949d4a880e235cfa46d7c, type: 3}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: broken-plates
@@ -3064,6 +3072,10 @@ PrefabInstance:
       propertyPath: ItemNote
       value: This many empty alcohol bottles is never a good sign...
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: inspectModel
+      value: 
+      objectReference: {fileID: 8985946731380272134, guid: b77dad585cace5d45a0fde06086f0a65, type: 3}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: alcohol-bottles
@@ -3714,6 +3726,10 @@ PrefabInstance:
       propertyPath: ItemNote
       value: Looks like someone had some serious injuries recently.
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: inspectModel
+      value: 
+      objectReference: {fileID: 4648825111419878418, guid: de573dcc1b073574e9fd81d438e4a526, type: 3}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: bloody-bandages
@@ -4168,7 +4184,7 @@ PrefabInstance:
     - target: {fileID: 6746648100438242704, guid: b8bc72d13bd66664da91070b425aaf07, type: 3}
       propertyPath: ResponseButtonContainer
       value: 
-      objectReference: {fileID: 1635466143}
+      objectReference: {fileID: 0}
     - target: {fileID: 8787178780869443432, guid: b8bc72d13bd66664da91070b425aaf07, type: 3}
       propertyPath: m_Name
       value: DialogueManager
@@ -7818,6 +7834,10 @@ PrefabInstance:
       propertyPath: ItemNote
       value: This belt looks pretty worn, and I see some blood on it as well.
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: inspectModel
+      value: 
+      objectReference: {fileID: 8754805250556345844, guid: 56a07c04856a67f4fb3a2da7fac8a362, type: 3}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: bloody-belt
@@ -7900,6 +7920,10 @@ PrefabInstance:
       propertyPath: ItemNote
       value: A pack of cigarettes. Looks like there's a few missing too.
       objectReference: {fileID: 0}
+    - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
+      propertyPath: inspectModel
+      value: 
+      objectReference: {fileID: 9051895220731844831, guid: a7f4dddd8c8e67a48b75cd14722c0303, type: 3}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: cig-pack
@@ -8471,6 +8495,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1892067007294018175, guid: a127815800f47c1469146a264be8ae19, type: 3}
+      propertyPath: m_fontSize
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892067007294018175, guid: a127815800f47c1469146a264be8ae19, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2445192818544628042, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -8583,13 +8615,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -98.61871
       objectReference: {fileID: 0}
+    - target: {fileID: 5765311432736162650, guid: a127815800f47c1469146a264be8ae19, type: 3}
+      propertyPath: m_fontSize
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5765311432736162650, guid: a127815800f47c1469146a264be8ae19, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8338233857240442391, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 8338233857240442391, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8675234471494638545, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8612,11 +8652,6 @@ PrefabInstance:
 --- !u!1 &1635466142 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8005006985822361842, guid: a127815800f47c1469146a264be8ae19, type: 3}
-  m_PrefabInstance: {fileID: 1635466141}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1635466143 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 967594197582702678, guid: a127815800f47c1469146a264be8ae19, type: 3}
   m_PrefabInstance: {fileID: 1635466141}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1635466144 stripped
@@ -8917,6 +8952,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 235138255378275716, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518009460244243577, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4954001017284996925, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.450255
@@ -10606,7 +10649,7 @@ PrefabInstance:
     - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: inspectModel
       value: 
-      objectReference: {fileID: 2053082776}
+      objectReference: {fileID: 3613126468509747136, guid: ba42df1211b51b14aaeedc64a52cb946, type: 3}
     - target: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: m_Name
       value: family-photo
@@ -10619,11 +10662,6 @@ PrefabInstance:
 --- !u!4 &2053082775 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3468176440186932341, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
-  m_PrefabInstance: {fileID: 2053082774}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2053082776 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5445158277668538794, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
   m_PrefabInstance: {fileID: 2053082774}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2055962788
