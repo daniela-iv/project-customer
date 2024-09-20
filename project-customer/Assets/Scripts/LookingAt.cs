@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class LookingAt : MonoBehaviour
 {
@@ -18,6 +20,9 @@ public class LookingAt : MonoBehaviour
     private GameObject inspectableUI;
 
     private bool isInspecting;
+
+    private string inspectTextItem = "(F) Inspect ";
+    private string inspectTextNPC = "(F) Talk with ";
 
     private void Awake()
     {
@@ -50,8 +55,11 @@ public class LookingAt : MonoBehaviour
 
             if (hit.transform.gameObject.tag == "Item")
             {
-                if(!isInspecting)
+                if (!isInspecting)
+                {
                     inspectableUI.SetActive(true);
+                    inspectableUI.GetComponentInChildren<TextMeshProUGUI>().text = inspectTextItem + hit.transform.GetComponent<Item>().Name;
+                }
 
                 if (Input.GetButtonDown("Interact"))
                 {
@@ -67,7 +75,7 @@ public class LookingAt : MonoBehaviour
             else if (hit.transform.gameObject.tag == "Actor")
             {
                 inspectableUI.SetActive(true);
-
+                inspectableUI.GetComponentInChildren<TextMeshProUGUI>().text = inspectTextNPC + hit.transform.GetComponent<Actor>().Name;
                 //fuction to show Question UI
             }
             if (dialogueManager.inDialogue == true)
