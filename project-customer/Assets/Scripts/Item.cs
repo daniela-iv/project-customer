@@ -28,7 +28,15 @@ public class Item : MonoBehaviour
         {
             case InteractionType.Text:
                 Debug.Log("item with text interact");
-                DialogueManager.Instance.StartDialogue(this, ItemDialogue.RootNode, true, true);
+                DialogueManager dialogueManager = DialogueManager.Instance;
+                if (dialogueManager.inDialogue)
+                {
+                    dialogueManager.HideDialogue();
+                }
+                else
+                {
+                    dialogueManager.StartDialogue(this, ItemDialogue.RootNode, true, true);
+                }
                 break;
 
             case InteractionType.Rotate:
