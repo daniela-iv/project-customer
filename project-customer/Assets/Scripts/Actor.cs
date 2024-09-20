@@ -34,7 +34,15 @@ public class Actor : MonoBehaviour, iLookReciever
 
     void SpeakWith()
     {
-        DialogueManager.Instance.StartDialogue(this, Dialogue.RootNode, italicize);
+        DialogueManager dialogueManager = DialogueManager.Instance;
+        if(dialogueManager.inDialogue)
+        {
+            dialogueManager.HideDialogue();
+        }
+        else
+        {
+            dialogueManager.StartDialogue(this, Dialogue.RootNode, italicize);
+        }
     }
     public void SetDialogue()
     {
