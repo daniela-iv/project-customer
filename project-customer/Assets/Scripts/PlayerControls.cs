@@ -12,6 +12,8 @@ public class SimplePhysicsControls : MonoBehaviour
 
     public float moveForce;
     public float moveSpeed;
+    public float SprintMultiplierForce;
+    public float SprintMultiplierSpeed;
     public float jumpForce = 20;
 
     public float rayLength = 1;
@@ -90,10 +92,26 @@ public class SimplePhysicsControls : MonoBehaviour
         switch (control)
         {
             case ControlType.Force:
-                rb.AddForce(moveVector * moveForce);
+                if(Input.GetButton("Sprint"))
+                {
+                    rb.AddForce(moveVector * moveForce * SprintMultiplierForce);
+                }
+                else
+                {
+                    rb.AddForce(moveVector * moveForce);
+                }
                 break;
             case ControlType.Velocity:
-                Vector3 newVelocity = new Vector3(0, rb.velocity.y, 0) + moveVector * moveSpeed;
+                Vector3 newVelocity = new Vector3(0, rb.velocity.y, 0);
+                if (Input.GetButton("Sprint"))
+                {
+                    newVelocity += moveVector * moveSpeed * SprintMultiplierSpeed;
+                }
+                else
+                {
+                    newVelocity += moveVector * moveSpeed;
+                }
+
                 rb.velocity = newVelocity;
                 break;
         }
