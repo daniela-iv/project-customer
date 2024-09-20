@@ -9146,6 +9146,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2101342140475610858, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
+      propertyPath: sensitivity.x
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101342140475610858, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
+      propertyPath: sensitivity.y
+      value: -1500
+      objectReference: {fileID: 0}
     - target: {fileID: 4954001017284996925, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.450255
@@ -9206,6 +9214,14 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 741424541}
+    - target: {fileID: 6579363196364903286, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
+      propertyPath: sensitivity.x
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579363196364903286, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
+      propertyPath: sensitivity.y
+      value: -1500
+      objectReference: {fileID: 0}
     - target: {fileID: 7348576923927485984, guid: ebd58c8961b65d24a9c11214560b1686, type: 3}
       propertyPath: m_Name
       value: Player
