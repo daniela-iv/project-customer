@@ -22,6 +22,7 @@ public class LookingAt : MonoBehaviour
     private bool isInspecting;
 
     private string inspectTextItem = "(F) Inspect ";
+    private string inspectTextDoor = "(F) To open ";
     private string inspectTextNPC = "(F) Talk with ";
 
     private void Awake()
@@ -78,6 +79,38 @@ public class LookingAt : MonoBehaviour
                 inspectableUI.GetComponentInChildren<TextMeshProUGUI>().text = inspectTextNPC + hit.transform.GetComponent<Actor>().Name;
                 //fuction to show Question UI
             }
+            else if((hit.transform.gameObject.tag == "Door"))
+            {
+                OpenScript openScript = hit.transform.GetComponent<OpenScript>();
+                if (!isInspecting)
+                {
+                    inspectableUI.SetActive(true);
+                    if(openScript.isOpen)
+                    {
+                        inspectTextDoor = "(F) To close ";
+                    }
+                    else
+                    {
+                        inspectTextDoor = "(F) To open ";
+                    }
+
+                    inspectableUI.GetComponentInChildren<TextMeshProUGUI>().text = inspectTextDoor;
+                }
+
+                if (Input.GetButtonDown("Interact"))
+                {
+                    Debug.Log("trying to interact with Door");
+                    if (openScript.isOpen)
+                    {
+                        openScript.Close();
+                    }
+                    else
+                    {
+                        openScript.Open();
+                    }
+                }
+            }
+
             if (dialogueManager.inDialogue == true)
             {
                 inspectableUI.SetActive(false);
