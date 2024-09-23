@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: TrashDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: A pile of trash. It's almost overflowing.
+    positiveReputationDialogue: Tons of garbage stacked in the corner. The smell
+      is intense too.
     positiveReputationResponses:
     - ResponseText: Leave.
       RequiredObjectTag: 

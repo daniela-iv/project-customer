@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CigaretteDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: You notice a pack of cigarettes in the child's bedroom.
+    positiveReputationDialogue: A pack of cigarettes, and a few seem to be missing...
     positiveReputationResponses:
     - ResponseText: Put them back.
       RequiredObjectTag: 

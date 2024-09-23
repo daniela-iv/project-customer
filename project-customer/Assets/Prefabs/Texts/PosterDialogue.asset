@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: PosterDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: A big poster of superman surrounded by other heroes.
+    positiveReputationDialogue: Ethan must love superheros. I should ask him about
+      them...
     positiveReputationResponses:
     - ResponseText: Leave.
       RequiredObjectTag: 

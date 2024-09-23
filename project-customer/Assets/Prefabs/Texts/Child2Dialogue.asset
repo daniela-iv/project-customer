@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Child2Dialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: Hi...
+    positiveReputationDialogue: Hello.
     positiveReputationResponses:
     - ResponseText: How did you like taking these family photos?
       RequiredObjectTag: Family Photo
       NextNode:
-        positiveReputationDialogue: Boring...
-        positiveReputationResponses: []
-        negativeReputationDialogue: I really wanted my teddy in the photos but dad
+        positiveReputationDialogue: I really wanted my teddy in the photos but dad
           just threw him across the room.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Boring...
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
@@ -47,10 +47,10 @@ MonoBehaviour:
     - ResponseText: Hey buddy. Can you tell me about these drawings?
       RequiredObjectTag: Drawings
       NextNode:
-        positiveReputationDialogue: "I was just doodling on the paper\u2026"
-        positiveReputationResponses: []
-        negativeReputationDialogue: "That\u2019s what he looks like when he\u2019s
+        positiveReputationDialogue: "That\u2019s what he looks like when he\u2019s
           mad."
+        positiveReputationResponses: []
+        negativeReputationDialogue: "I was just doodling on the paper\u2026"
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
@@ -58,49 +58,49 @@ MonoBehaviour:
         came from?
       RequiredObjectTag: Cigarette Pack
       NextNode:
-        positiveReputationDialogue: I don't know how they got there, I swear.
-        positiveReputationResponses: []
-        negativeReputationDialogue: Dad says smoking helps him calm down so I thought
+        positiveReputationDialogue: Dad says smoking helps him calm down so I thought
           I could try...
+        positiveReputationResponses: []
+        negativeReputationDialogue: I don't know how they got there, I swear.
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Who usually does the dishes in the house?
       RequiredObjectTag: Dirty Dishes
       NextNode:
-        positiveReputationDialogue: Mom.
-        positiveReputationResponses: []
-        negativeReputationDialogue: Dad never helps with the chores. Mom's always
+        positiveReputationDialogue: Dad never helps with the chores. Mom's always
           so tired.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Mom.
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Does the trash in the kitchen bother you at all?
       RequiredObjectTag: Pile of Trash
       NextNode:
-        positiveReputationDialogue: I don't go in the kitchen much.
-        positiveReputationResponses: []
-        negativeReputationDialogue: "My nose hurts when I'm in there. Sometimes,
+        positiveReputationDialogue: "My nose hurts when I'm in there. Sometimes,
           I just want to grab a snack\u2026"
+        positiveReputationResponses: []
+        negativeReputationDialogue: I don't go in the kitchen much.
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Do you know what happened to these plates?
       RequiredObjectTag: Broken Plates
       NextNode:
-        positiveReputationDialogue: (Silent)
-        positiveReputationResponses: []
-        negativeReputationDialogue: He's always breaking things when he's drunk.
+        positiveReputationDialogue: He's always breaking things when he's drunk.
           I can't keep replacing plates every week!
+        positiveReputationResponses: []
+        negativeReputationDialogue: (Silent)
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Do you happen to know whose bandages these are?
       RequiredObjectTag: Used Bandages
       NextNode:
-        positiveReputationDialogue: (Silent)
+        positiveReputationDialogue: They're mine. I'm all better though, promise!
         positiveReputationResponses: []
-        negativeReputationDialogue: They're mine. I'm all better though, promise!
+        negativeReputationDialogue: (Silent)
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
@@ -124,7 +124,105 @@ MonoBehaviour:
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    negativeReputationDialogue: Bye now.
-    negativeReputationResponses: []
+    negativeReputationDialogue: Hi...
+    negativeReputationResponses:
+    - ResponseText: How did you like taking these family photos?
+      RequiredObjectTag: Family Photo
+      NextNode:
+        positiveReputationDialogue: I really wanted my teddy in the photos but dad
+          just threw him across the room.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Boring...
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found this belt. Has your dad hurt you with it?
+      RequiredObjectTag: Blood Stained Belt
+      NextNode:
+        positiveReputationDialogue: "When he\u2019s mad... I try to hide."
+        positiveReputationResponses: []
+        negativeReputationDialogue: (Silent)
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Do you know about these bottles?
+      RequiredObjectTag: Alcohol Bottles
+      NextNode:
+        positiveReputationDialogue: He hides them. But I know, when he drinks them
+          I have to hide.
+        positiveReputationResponses: []
+        negativeReputationDialogue: "No\u2026"
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Hey buddy. Can you tell me about these drawings?
+      RequiredObjectTag: Drawings
+      NextNode:
+        positiveReputationDialogue: "That\u2019s what he looks like when he\u2019s
+          mad."
+        positiveReputationResponses: []
+        negativeReputationDialogue: "I was just doodling on the paper\u2026"
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found these cigarettes in your desk. Do you know where they
+        came from?
+      RequiredObjectTag: Cigarette Pack
+      NextNode:
+        positiveReputationDialogue: Dad says smoking helps him calm down so I thought
+          I could try...
+        positiveReputationResponses: []
+        negativeReputationDialogue: I don't know how they got there, I swear.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Who usually does the dishes in the house?
+      RequiredObjectTag: Dirty Dishes
+      NextNode:
+        positiveReputationDialogue: Dad never helps with the chores. Mom's always
+          so tired.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Mom.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Does the trash in the kitchen bother you at all?
+      RequiredObjectTag: Pile of Trash
+      NextNode:
+        positiveReputationDialogue: "My nose hurts when I'm in there. Sometimes,
+          I just want to grab a snack\u2026"
+        positiveReputationResponses: []
+        negativeReputationDialogue: I don't go in the kitchen much.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Do you know what happened to these plates?
+      RequiredObjectTag: Broken Plates
+      NextNode:
+        positiveReputationDialogue: He's always breaking things when he's drunk.
+          I can't keep replacing plates every week!
+        positiveReputationResponses: []
+        negativeReputationDialogue: (Silent)
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Do you happen to know whose bandages these are?
+      RequiredObjectTag: Used Bandages
+      NextNode:
+        positiveReputationDialogue: They're mine. I'm all better though, promise!
+        positiveReputationResponses: []
+        negativeReputationDialogue: (Silent)
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Leave.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
     changeReputation: 0
     changeReputationTo: 0

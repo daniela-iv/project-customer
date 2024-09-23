@@ -157,9 +157,142 @@ MonoBehaviour:
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    negativeReputationDialogue: Fuck off
+    negativeReputationDialogue: What do you want?
     negativeReputationResponses:
-    - ResponseText: Leave
+    - ResponseText: "Good evening, Mr. Walker. I\u2019m here from social services.
+        A neighbor reported some strange sounds coming from your home, and I need
+        to ask a few questions."
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: Strange sounds? Who told you that?
+        positiveReputationResponses:
+        - ResponseText: "I just need to have a quick look around to ensure everything\u2019s
+            okay."
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: I want to see your ID first.
+            positiveReputationResponses:
+            - ResponseText: '*Show him your ID.*'
+              RequiredObjectTag: 
+              NextNode:
+                positiveReputationDialogue: "Alright. Get in and do what you need
+                  to, but don\u2019t waste my time."
+                positiveReputationResponses:
+                - ResponseText: Alright.
+                  RequiredObjectTag: 
+                  NextNode:
+                    positiveReputationDialogue: 
+                    positiveReputationResponses: []
+                    negativeReputationDialogue: 
+                    negativeReputationResponses: []
+                    changeReputation: 0
+                    changeReputationTo: 0
+                negativeReputationDialogue: 
+                negativeReputationResponses: []
+                changeReputation: 0
+                changeReputationTo: 0
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: You have a beautiful family, Jim. Why is Ethan not smiling in
+        these photos, though?
+      RequiredObjectTag: Family Photo
+      NextNode:
+        positiveReputationDialogue: What do I know?
+        positiveReputationResponses: []
+        negativeReputationDialogue: What do I know?
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found this belt. Any reason it is covered in blood?
+      RequiredObjectTag: Blood Stained Belt
+      NextNode:
+        positiveReputationDialogue: I had to use it to wack away a rabid raccoon.
+          Nasty stuff.
+        positiveReputationResponses: []
+        negativeReputationDialogue: I had to use it to wack away a rabid raccoon.
+          Nasty stuff.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found bottles in the closet from your room.
+      RequiredObjectTag: Alcohol Bottles
+      NextNode:
+        positiveReputationDialogue: So? I like a drink in the evening to unwind after
+          my 10 hour shift!
+        positiveReputationResponses: []
+        negativeReputationDialogue: So? I like a drink in the evening to unwind after
+          my 10 hour shift!
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found some artwork that Ethan's made. Have you seen these?
+      RequiredObjectTag: Drawings
+      NextNode:
+        positiveReputationDialogue: The kid draws too much. I told him he better
+          get good scores on his math test.
+        positiveReputationResponses: []
+        negativeReputationDialogue: The kid draws too much. I told him he better
+          get good scores on his math test.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: "I found cigarettes hidden in Ethan\u2019s room. Do you know
+        about this?"
+      RequiredObjectTag: Cigarette Pack
+      NextNode:
+        positiveReputationDialogue: Hah! Linda messed up again. We'll discuss it
+          later.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Hah! Linda messed up again. We'll discuss it
+          later.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Those dishes in the kitchen seem to have been out for a while.
+      RequiredObjectTag: Dirty Dishes
+      NextNode:
+        positiveReputationDialogue: Linda's been slacking off. I rarely set foot
+          in there these days.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Linda's been slacking off. I rarely set foot
+          in there these days.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: The trash in the kitchen has piled up quite a bit.
+      RequiredObjectTag: Pile of Trash
+      NextNode:
+        positiveReputationDialogue: Are you gonna get on my ass about that too?
+        positiveReputationResponses: []
+        negativeReputationDialogue: Are you gonna get on my ass about that too?
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found some broken plates in the trash.
+      RequiredObjectTag: Broken Plates
+      NextNode:
+        positiveReputationDialogue: "Linda's just\u2026 very clumsy."
+        positiveReputationResponses: []
+        negativeReputationDialogue: "Linda's just\u2026 very clumsy."
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I saw some bloody bandages in the trash. Is everything alright?
+      RequiredObjectTag: Used Bandages
+      NextNode:
+        positiveReputationDialogue: Got injured at work, forget about it.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Got injured at work, forget about it.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Leave.
       RequiredObjectTag: 
       NextNode:
         positiveReputationDialogue: 

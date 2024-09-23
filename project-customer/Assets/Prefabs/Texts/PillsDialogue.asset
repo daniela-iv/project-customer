@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PillsDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: A pack of prescription pills on the bedside table.
-      It seems to be the mother's.
+    positiveReputationDialogue: Some high dose antidepressants. Someone must be dealing
+      with serious stress.
     positiveReputationResponses:
     - ResponseText: Leave.
       RequiredObjectTag: 

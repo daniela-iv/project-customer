@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BrokenPlatesDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: A couple broken dishes are laid on the counter.
+    positiveReputationDialogue: Broken dishes. I hope this was an accident.
     positiveReputationResponses:
     - ResponseText: Leave.
       RequiredObjectTag: 
