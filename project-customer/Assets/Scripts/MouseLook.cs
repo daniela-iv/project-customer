@@ -34,9 +34,10 @@ public class MouseLook : MonoBehaviour
         {
             euler.x -= 360;
         }
-        euler.x = Mathf.Clamp(euler.x, -maxVerticalAngle, maxVerticalAngle);
-
-        rotation= new Vector2(euler.x, euler.y);
+        euler.x = Mathf.Clamp(Camera.main.transform.rotation.x, -maxVerticalAngle, maxVerticalAngle);
+      
+        rotation= new Vector2(-275, 10);
+        print(euler.y);
     }
 
     private Vector2 GetInput()
