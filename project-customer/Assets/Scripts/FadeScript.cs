@@ -12,6 +12,9 @@ public class FadeScript : MonoBehaviour
     [SerializeField]
     private float timeBeforeFadeOut;
 
+    [SerializeField]
+    private bool isTrigger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +57,9 @@ public class FadeScript : MonoBehaviour
     
     private IEnumerator Timer()
     {
-        GameManager.Instance.changeCharacters();
+        if(isTrigger)
+            GameManager.Instance.changeCharacters();
+
         float timer = timeBeforeFadeOut;
         while (timer > 0f)
         {
