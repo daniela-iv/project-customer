@@ -10,25 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba17766de0eca3d4caca8a1c663adcee, type: 3}
-  m_Name: Mom1Dialogue
+  m_Name: Dad2Dialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: Can I help you sweetie?
+    positiveReputationDialogue: What do you want?
     positiveReputationResponses:
-    - ResponseText: How are things in the house? Any recent arguments perhaps?
+    - ResponseText: "Good evening, Mr. Walker. I\u2019m here from social services.
+        A neighbor reported some strange sounds coming from your home, and I need
+        to ask a few questions."
       RequiredObjectTag: 
       NextNode:
-        positiveReputationDialogue: Oh, of course not! Isn't that right honey? Hahah...
-        positiveReputationResponses:
-        - ResponseText: Leave.
-          RequiredObjectTag: 
-          NextNode:
-            positiveReputationDialogue: 
-            positiveReputationResponses: []
-            negativeReputationDialogue: 
-            negativeReputationResponses: []
-            changeReputation: 0
-            changeReputationTo: 0
+        positiveReputationDialogue: Strange sounds? Who told you that?
+        positiveReputationResponses: []
         negativeReputationDialogue: 
         negativeReputationResponses: []
         changeReputation: 0

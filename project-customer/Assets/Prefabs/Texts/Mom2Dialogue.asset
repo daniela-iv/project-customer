@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba17766de0eca3d4caca8a1c663adcee, type: 3}
+  m_Name: Mom2Dialogue
+  m_EditorClassIdentifier: 
+  RootNode:
+    positiveReputationDialogue: Can I help you, sweetie?
+    positiveReputationResponses:
+    - ResponseText: You have a beautiful family, Linda. Why is Ethan not smiling
+        in these photos, though?
+      RequiredObjectTag: Family Photo
+      NextNode:
+        positiveReputationDialogue: He was probably sad he didn't have his teddy
+          with him.
+        positiveReputationResponses: []
+        negativeReputationDialogue: I couldn't get him to. When his dad's around,
+          he just locks up.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found this belt. Any reason it is covered in blood?
+      RequiredObjectTag: Blood Stained Belt
+      NextNode:
+        positiveReputationDialogue: "No! It\u2019s just old."
+        positiveReputationResponses: []
+        negativeReputationDialogue: "He uses it when he\u2019s angry. I\u2019ve tried
+          to protect Ethan once\u2026"
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found bottles in the closet from your room.
+      RequiredObjectTag: Alcohol Bottles
+      NextNode:
+        positiveReputationDialogue: "Jim drinks sometimes... it\u2019s no big deal."
+        positiveReputationResponses: []
+        negativeReputationDialogue: When he drinks, everything changes. He just starts
+          swinging and I never know what to do.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: "[MISSING] I found some artwork. It seems Ethan\u2019s been drawing
+        his father as a monster."
+      RequiredObjectTag: Drawings
+      NextNode:
+        positiveReputationDialogue: It's just a drawing, nothing more!
+        positiveReputationResponses: []
+        negativeReputationDialogue: "I\u2019ve seen them... he\u2019s afraid, but
+          I didn\u2019t know how to help him."
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: "I found cigarettes hidden in Ethan\u2019s room. Do you know
+        about this?"
+      RequiredObjectTag: Cigarette Pack
+      NextNode:
+        positiveReputationDialogue: They are mine. Ethan must've taken them out of
+          my bag.
+        positiveReputationResponses: []
+        negativeReputationDialogue: "This is the first I'm hearing of this. I should've
+          noticed sooner\u2026"
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Those dishes in the kitchen seem to have been out for a while.
+      RequiredObjectTag: Dirty Dishes
+      NextNode:
+        positiveReputationDialogue: I was going to clean them today.
+        positiveReputationResponses: []
+        negativeReputationDialogue: With Jim and I both working, and Ethan in school,
+          I can rarely get around to it.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: The trash in the kitchen has piled up quite a bit.
+      RequiredObjectTag: Pile of Trash
+      NextNode:
+        positiveReputationDialogue: "Jim's taking it out soon, don\u2019t worry about
+          that."
+        positiveReputationResponses: []
+        negativeReputationDialogue: I've asked Jim a hundred times to take the trash
+          out but nothing!
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found some broken plates in the trash.
+      RequiredObjectTag: Broken Plates
+      NextNode:
+        positiveReputationDialogue: Oh, that was just an accident.
+        positiveReputationResponses: []
+        negativeReputationDialogue: It happens when Jim gets angry. He throws things.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I saw some bloody bandages in the trash. Is everything alright?
+      RequiredObjectTag: Used Bandages
+      NextNode:
+        positiveReputationDialogue: Ethan fell and scuffed his knee, it's nothing.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Jim hit Ethan with the belt so hard last week.
+          I couldn't do anything.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found some pretty heavy antidepressants. Are you alright, Linda?
+      RequiredObjectTag: Perscription Pills
+      NextNode:
+        positiveReputationDialogue: "After the yelling and drinking, I don\u2019t
+          know how to cope anymore. It\u2019s just too much."
+        positiveReputationResponses: []
+        negativeReputationDialogue: Jim hit Ethan with the belt so hard last week.
+          I couldn't do anything.
+        negativeReputationResponses: []
+        changeReputation: 1
+        changeReputationTo: 1
+    - ResponseText: Leave.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    negativeReputationDialogue: No thanks.
+    negativeReputationResponses: []
+    changeReputation: 0
+    changeReputationTo: 0
