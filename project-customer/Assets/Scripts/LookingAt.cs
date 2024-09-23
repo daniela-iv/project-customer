@@ -22,6 +22,9 @@ public class LookingAt : MonoBehaviour
     private bool isInspecting;
 
     private string inspectTextItem = "(F) Inspect ";
+    private string inspectTextItemText = "(F) examine ";
+    private string inspectTextItemExit = "(F) finish your investigation ";
+    private string inspectTextItemSwitch = "(F) Turn off power ";
     private string inspectTextDoor = "(F) To open ";
     private string inspectTextNPC = "(F) Talk with ";
 
@@ -59,7 +62,24 @@ public class LookingAt : MonoBehaviour
                 if (!isInspecting)
                 {
                     inspectableUI.SetActive(true);
-                    inspectableUI.GetComponentInChildren<TextMeshProUGUI>().text = inspectTextItem + hit.transform.GetComponent<Item>().Name;
+                    Item item = hit.transform.GetComponent<Item>();
+                    TextMeshProUGUI text = inspectableUI.GetComponentInChildren<TextMeshProUGUI>();
+                    if (item.interactionType == Item.InteractionType.Switch)
+                    {
+                        text.text = inspectTextItemSwitch;
+                    }
+                    else if(item.interactionType == Item.InteractionType.exit)
+                    {
+                        text.text = inspectTextItemExit;
+                    }
+                    else if(item.interactionType == Item.InteractionType.Text)
+                    {
+                        text.text = inspectTextItemText + item.Name;
+                    }
+                    else
+                    {
+                        text.text = inspectTextItem + item.Name;
+                    }
                 }
 
                 if (Input.GetButtonDown("Interact"))

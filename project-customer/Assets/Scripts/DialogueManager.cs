@@ -286,8 +286,7 @@ public class DialogueManager : MonoBehaviour
 
         if(dad0.activeSelf)
         {
-            dad0.SetActive(false);
-            dad1.SetActive(true);
+            GameManager.Instance.Fade();
         }
 
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
