@@ -182,7 +182,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
                     {
-                        Debug.Log("");
+                        Debug.Log("loading unseen convo");
                         GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
                         buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
 
@@ -218,7 +218,8 @@ public class DialogueManager : MonoBehaviour
                         
                     if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
                     {
-                        Debug.Log("Making buttons for negative");
+                        Debug.Log("loading unseen negative convo");
+
                         GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
                         buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
 
