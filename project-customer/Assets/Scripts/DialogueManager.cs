@@ -32,6 +32,12 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private UnityEngine.UI.Image portrait;
 
+
+    [SerializeField]
+    private GameObject dad0;
+    [SerializeField]
+    private GameObject dad1;
+
     private void Awake()
     {
         if (Instance == null)
@@ -277,6 +283,13 @@ public class DialogueManager : MonoBehaviour
     public void HideDialogue()
     {
         DialogueParent.SetActive(false);
+
+        if(dad0.activeSelf)
+        {
+            dad0.SetActive(false);
+            dad1.SetActive(true);
+        }
+
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         UnityEngine.Cursor.visible = false;
         FreezePlayer(false);
