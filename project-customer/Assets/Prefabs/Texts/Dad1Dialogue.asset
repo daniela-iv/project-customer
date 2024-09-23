@@ -157,7 +157,16 @@ MonoBehaviour:
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    negativeReputationDialogue: 
-    negativeReputationResponses: []
+    negativeReputationDialogue: Fuck off
+    negativeReputationResponses:
+    - ResponseText: Leave
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
     changeReputation: 0
     changeReputationTo: 0

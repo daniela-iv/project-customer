@@ -52,6 +52,7 @@ public class Item : MonoBehaviour
                 break;
             case InteractionType.Switch:
                 Debug.Log("item with switch interact");
+                GetComponentInChildren<Light>().color = Color.red;
                 GameManager.Instance.SecondStage();
                 break;
             case InteractionType.exit:
