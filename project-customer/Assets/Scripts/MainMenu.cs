@@ -6,6 +6,8 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField]
     private GameObject tutorialPage;
+    [SerializeField]
+    private Actor dad;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,16 @@ public class MainMenu : MonoBehaviour
         tutorialPage.SetActive(false);  
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        DialogueManager dialogueManager = DialogueManager.Instance;
+        if (dialogueManager.inDialogue)
+        {
+            dialogueManager.HideDialogue();
+        }
+        else
+        {
+            dialogueManager.StartDialogue(dad, dad.Dialogue.RootNode, dad.italicize);
+        }
     }
     
     public void QuitGame()

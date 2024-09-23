@@ -79,7 +79,6 @@ public class GameManager : MonoBehaviour
                 changeCharacters();
 
             timer -= 1f;
-            print(timer);
             yield return new WaitForSecondsRealtime(1f);
         }
         EndGame(true);
