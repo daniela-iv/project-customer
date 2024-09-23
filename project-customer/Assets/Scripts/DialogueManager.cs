@@ -158,35 +158,32 @@ public class DialogueManager : MonoBehaviour
         if (actor.reputation)
         {
             Debug.Log(actor.Name + " Do positive behaviour logic: " +actor.reputation);
+            print("test1");
+            DialogueBody.text = node.positiveReputationDialogue;
+            portrait.sprite = actor.positiveFace;
+            portrait.color = Color.white;
 
-            if (node.playedPositiveDialogue == false)
+            foreach (Transform child in ResponseButtonContainer)
             {
-                DialogueBody.text = node.positiveReputationDialogue;
-                portrait.sprite = actor.positiveFace;
-                portrait.color = Color.white;
+                Destroy(child.gameObject);
+            }
 
-                foreach (Transform child in ResponseButtonContainer)
+            Debug.Log("Loading positive responses");
+
+            foreach (DialogueResponse response in node.positiveReputationResponses)
+            {
+                if (response.NextNode.playedPositiveDialogue == false)
                 {
-                    Destroy(child.gameObject);
-                }
-
-                Debug.Log("Loading positive responses");
-
-                foreach (DialogueResponse response in node.positiveReputationResponses)
-                {
-                    if (response.NextNode.playedPositiveDialogue == false)
+                    if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
                     {
-                        if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
-                        {
-                            Debug.Log("");
-                            GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
-                            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
+                        Debug.Log("");
+                        GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
+                        buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
 
-                            buttonObj.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => SelectResponseActor(response, actor, italicize));
-                        }
-
-                        node.playedPositiveDialogue = true;
+                        buttonObj.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => SelectResponseActor(response, actor, italicize));
                     }
+
+                    node.playedPositiveDialogue = true;
                 }
             }
 
@@ -195,36 +192,34 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log("Do negative behaviour logic");
 
-            if (node.playedNegativeDialogue == false)
+            print("test2");
+            DialogueBody.text = node.negativeReputationDialogue;
+            portrait.sprite = actor.negativeFace;
+            portrait.color = Color.white;
+
+            foreach (Transform child in ResponseButtonContainer)
             {
-                DialogueBody.text = node.negativeReputationDialogue;
-                portrait.sprite = actor.negativeFace;
-                portrait.color = Color.white;
+                Destroy(child.gameObject);
+            }
 
-                foreach (Transform child in ResponseButtonContainer)
+            foreach (DialogueResponse response in node.negativeReputationResponses)
+            {
+                if (response.NextNode.playedNegativeDialogue == false)
                 {
-                    Destroy(child.gameObject);
-                }
+                    node.playedNegativeDialogue = true;
 
-                foreach (DialogueResponse response in node.negativeReputationResponses)
-                {
-                    if (response.NextNode.playedNegativeDialogue == false)
-                    {
-                        node.playedNegativeDialogue = true;
-
-                        print(response.RequiredObjectTag);
+                    print(response.RequiredObjectTag);
                         
-                        if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
-                        {
-                            Debug.Log("Making buttons for negative");
-                            GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
-                            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
+                    if (response.RequiredObjectTag == "" || InventoryContains(response.RequiredObjectTag))
+                    {
+                        Debug.Log("Making buttons for negative");
+                        GameObject buttonObj = Instantiate(ResponseButtonPrefab, ResponseButtonContainer);
+                        buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.ResponseText;
 
-                            buttonObj.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => SelectResponseActor(response, actor, italicize));
-                        }
-
-                        node.playedNegativeDialogue = true;
+                        buttonObj.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => SelectResponseActor(response, actor, italicize));
                     }
+
+                    node.playedNegativeDialogue = true;
                 }
             }
 

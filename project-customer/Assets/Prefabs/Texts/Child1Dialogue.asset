@@ -150,7 +150,7 @@ MonoBehaviour:
             changeReputationTo: 0
         negativeReputationDialogue: 
         negativeReputationResponses: []
-        changeReputation: 1
-        changeReputationTo: 1
+        changeReputation: 0
+        changeReputationTo: 0
     changeReputation: 0
     changeReputationTo: 0
