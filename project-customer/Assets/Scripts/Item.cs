@@ -37,7 +37,7 @@ public class Item : MonoBehaviour
                 {
                     Debug.Log("item with rotate interact");
                     inspect.SetActive(true);
-                    Instantiate(inspectModel, inspectObjPos.transform.position, new Quaternion(0, 0, 0, 0), inspectObjPos.transform);
+                    Instantiate(inspectModel, inspectObjPos.transform.position, Quaternion.identity, inspectObjPos.transform);
                     Camera.main.GetComponent<MouseLook>().CanLookAround = false;
                     GameObject.FindGameObjectWithTag("Player").GetComponent<MouseLook>().CanLookAround = false;
                 }
