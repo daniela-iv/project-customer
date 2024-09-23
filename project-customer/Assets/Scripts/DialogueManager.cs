@@ -81,6 +81,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Starting item dialogue");
 
         ShowDialogue();
+        portrait.color = Color.clear;
         DialogueTitle.text = item.Name;
 
         if (italicize)
@@ -162,6 +163,7 @@ public class DialogueManager : MonoBehaviour
             {
                 DialogueBody.text = node.positiveReputationDialogue;
                 portrait.sprite = actor.positiveFace;
+                portrait.color = Color.white;
 
                 foreach (Transform child in ResponseButtonContainer)
                 {
@@ -197,6 +199,7 @@ public class DialogueManager : MonoBehaviour
             {
                 DialogueBody.text = node.negativeReputationDialogue;
                 portrait.sprite = actor.negativeFace;
+                portrait.color = Color.white;
 
                 foreach (Transform child in ResponseButtonContainer)
                 {

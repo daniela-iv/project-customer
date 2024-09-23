@@ -4,22 +4,27 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject tutorialPage;
+
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 0f;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void StartGame()
     {
-        Time.timeScale = 1f;
         gameObject.SetActive(false);
+        tutorialPage.SetActive(true);
+    }
+
+    public void Continu()
+    {
+        Time.timeScale = 1f;
+        tutorialPage.SetActive(false);  
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
