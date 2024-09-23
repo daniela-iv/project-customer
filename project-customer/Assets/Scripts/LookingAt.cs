@@ -22,7 +22,8 @@ public class LookingAt : MonoBehaviour
     private bool isInspecting;
 
     private string inspectTextItem = "(F) Inspect ";
-    private string inspectTextItemExit = "(F) Leave ";
+    private string inspectTextItemText = "(F) examine ";
+    private string inspectTextItemExit = "(F) finish your investigation ";
     private string inspectTextItemSwitch = "(F) Turn off power ";
     private string inspectTextDoor = "(F) To open ";
     private string inspectTextNPC = "(F) Talk with ";
@@ -70,6 +71,10 @@ public class LookingAt : MonoBehaviour
                     else if(item.interactionType == Item.InteractionType.exit)
                     {
                         text.text = inspectTextItemExit;
+                    }
+                    else if(item.interactionType == Item.InteractionType.Text)
+                    {
+                        text.text = inspectTextItemText;
                     }
                     else
                     {
