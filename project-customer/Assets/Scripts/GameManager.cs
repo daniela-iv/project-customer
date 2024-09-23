@@ -64,10 +64,15 @@ public class GameManager : MonoBehaviour
 
     public void SecondStage()
     {
-        fade.fadeIn();
+        Fade();
         print("changed stage");
         gameState = GameState.secondStage;
         StartCoroutine(Timer());
+    }
+
+    public void Fade()
+    {
+        fade.fadeIn();
     }
 
     private IEnumerator Timer()
