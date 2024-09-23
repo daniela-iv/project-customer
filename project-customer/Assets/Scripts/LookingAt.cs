@@ -74,7 +74,7 @@ public class LookingAt : MonoBehaviour
                     }
                     else if(item.interactionType == Item.InteractionType.Text)
                     {
-                        text.text = inspectTextItemText;
+                        text.text = inspectTextItemText + item.Name;
                     }
                     else
                     {
