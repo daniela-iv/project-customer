@@ -13,26 +13,9 @@ MonoBehaviour:
   m_Name: PortraitDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: A nice family picture.
+    positiveReputationDialogue: A nice family picture, but Ethan doesn't seem to
+      be very happy.
     positiveReputationResponses:
-    - ResponseText: Examine it closer.
-      RequiredObjectTag: 
-      NextNode:
-        positiveReputationDialogue: You notice the son isn't smiling.
-        positiveReputationResponses:
-        - ResponseText: Leave.
-          RequiredObjectTag: 
-          NextNode:
-            positiveReputationDialogue: 
-            positiveReputationResponses: []
-            negativeReputationDialogue: 
-            negativeReputationResponses: []
-            changeReputation: 0
-            changeReputationTo: 0
-        negativeReputationDialogue: 
-        negativeReputationResponses: []
-        changeReputation: 0
-        changeReputationTo: 0
     - ResponseText: Leave.
       RequiredObjectTag: 
       NextNode:

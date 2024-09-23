@@ -13,13 +13,164 @@ MonoBehaviour:
   m_Name: Mom1Dialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: Can I help you sweetie?
+    positiveReputationDialogue: How can I help you?
     positiveReputationResponses:
+    - ResponseText: You have a beautiful family, Linda. Why is Ethan not smiling
+        in these photos, though?
+      RequiredObjectTag: Family Photo
+      NextNode:
+        positiveReputationDialogue: I couldn't get him to. When his dad's around,
+          he just locks up.
+        positiveReputationResponses: []
+        negativeReputationDialogue: He was probably sad he didn't have his teddy
+          with him.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found this belt. Any reason it is covered in blood?
+      RequiredObjectTag: Blood Stained Belt
+      NextNode:
+        positiveReputationDialogue: "He uses it when he\u2019s angry. I\u2019ve tried
+          to protect Ethan once\u2026"
+        positiveReputationResponses: []
+        negativeReputationDialogue: "No! It\u2019s just old."
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found bottles in the closet from your room.
+      RequiredObjectTag: Alcohol Bottles
+      NextNode:
+        positiveReputationDialogue: When he drinks, everything changes. He just starts
+          swinging and I never know what to do.
+        positiveReputationResponses: []
+        negativeReputationDialogue: "Jim drinks sometimes... it\u2019s no big deal."
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: "I found some artwork. It seems Ethan\u2019s been drawing his
+        father as a monster."
+      RequiredObjectTag: Drawings
+      NextNode:
+        positiveReputationDialogue: "I\u2019ve seen them... he\u2019s afraid, but
+          I don't know how to help him."
+        positiveReputationResponses: []
+        negativeReputationDialogue: It's just a drawing, nothing more!
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: "I found cigarettes hidden in Ethan\u2019s room. Do you know
+        about this?"
+      RequiredObjectTag: Cigarette Pack
+      NextNode:
+        positiveReputationDialogue: "This is the first I'm hearing of this. I should've
+          noticed sooner\u2026"
+        positiveReputationResponses: []
+        negativeReputationDialogue: They are mine. Ethan must've taken them out of
+          my bag.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Those dishes in the kitchen seem to have been out for a while.
+      RequiredObjectTag: Dirty Dishes
+      NextNode:
+        positiveReputationDialogue: With Jim and I both working, and Ethan in school,
+          I can rarely get around to it.
+        positiveReputationResponses: []
+        negativeReputationDialogue: I was going to clean them today.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: The trash in the kitchen has piled up quite a bit.
+      RequiredObjectTag: Pile of Trash
+      NextNode:
+        positiveReputationDialogue: I've asked Jim a hundred times to take the trash
+          out but nothing!
+        positiveReputationResponses: []
+        negativeReputationDialogue: "Jim's taking it out soon, don\u2019t worry about
+          that."
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found some broken plates in the trash.
+      RequiredObjectTag: Broken Plates
+      NextNode:
+        positiveReputationDialogue: It happens when Jim gets angry. He throws things.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Oh, that was just an accident.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I saw some bloody bandages in the trash. Is everything alright?
+      RequiredObjectTag: Used Bandages
+      NextNode:
+        positiveReputationDialogue: Jim hit Ethan with the belt so hard last week.
+          I couldn't do anything.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Ethan fell and scuffed his knee, it's nothing.
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found some pretty heavy antidepressants. Are you alright, Linda?
+      RequiredObjectTag: Perscription Pills
+      NextNode:
+        positiveReputationDialogue: "After the yelling and drinking, I don\u2019t
+          know how to cope anymore. It\u2019s just too much."
+        positiveReputationResponses: []
+        negativeReputationDialogue: "After the yelling and drinking, I don\u2019t
+          know how to cope anymore. It\u2019s just too much."
+        negativeReputationResponses: []
+        changeReputation: 1
+        changeReputationTo: 1
+    - ResponseText: Leave.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    negativeReputationDialogue: Yes?
+    negativeReputationResponses:
     - ResponseText: How are things in the house? Any recent arguments perhaps?
       RequiredObjectTag: 
       NextNode:
         positiveReputationDialogue: Oh, of course not! Isn't that right honey? Hahah...
         positiveReputationResponses:
+        - ResponseText: I'm here on a wellness check because the neighbors heard
+            -
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: Oh, that's nonsense! It's probably the TV
+              noise, Jim likes it loud.
+            negativeReputationResponses:
+            - ResponseText: <i>Feels like she's walking on eggshells around Jim.
+                I wonder what I could do...</i>
+              RequiredObjectTag: 
+              NextNode:
+                positiveReputationDialogue: 
+                positiveReputationResponses: []
+                negativeReputationDialogue: 
+                negativeReputationResponses: []
+                changeReputation: 0
+                changeReputationTo: 0
+            changeReputation: 0
+            changeReputationTo: 0
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: You have a beautiful family, Linda. Why is Ethan not smiling
+        in these photos, though?
+      RequiredObjectTag: Family Photo
+      NextNode:
+        positiveReputationDialogue: I couldn't get him to. When his dad's around,
+          he just locks up.
+        positiveReputationResponses: []
+        negativeReputationDialogue: 'Like Jim says: Kid''s these days.'
+        negativeReputationResponses:
         - ResponseText: Leave.
           RequiredObjectTag: 
           NextNode:
@@ -29,8 +180,152 @@ MonoBehaviour:
             negativeReputationResponses: []
             changeReputation: 0
             changeReputationTo: 0
-        negativeReputationDialogue: 
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found this belt. Any reason it's got some blood on it?
+      RequiredObjectTag: Blood Stained Belt
+      NextNode:
+        positiveReputationDialogue: "He uses it when he\u2019s angry. I\u2019ve tried
+          to protect Ethan once\u2026"
+        positiveReputationResponses: []
+        negativeReputationDialogue: That's just Jim's old work belt.
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found bottles in the closet from your room.
+      RequiredObjectTag: Alcohol Bottles
+      NextNode:
+        positiveReputationDialogue: When he drinks, everything changes. He just starts
+          swinging and I never know what to do.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Jim enjoys a nightcap - there's nothing deep
+          to it.
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found some of Ethan's artwork. Have you seen this?
+      RequiredObjectTag: Drawings
+      NextNode:
+        positiveReputationDialogue: "I\u2019ve seen them... he\u2019s afraid, but
+          I don't know how to help him."
+        positiveReputationResponses: []
+        negativeReputationDialogue: Our boy is very talented. Isn't it nice?
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: "I found cigarettes hidden in Ethan\u2019s room. Do you know
+        about this?"
+      RequiredObjectTag: Cigarette Pack
+      NextNode:
+        positiveReputationDialogue: "This is the first I'm hearing of this. I should've
+          noticed sooner\u2026"
+        positiveReputationResponses: []
+        negativeReputationDialogue: They are mine. Ethan must've taken them out of
+          my bag.
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Those dishes in the kitchen seem to have been out for a while.
+      RequiredObjectTag: Dirty Dishes
+      NextNode:
+        positiveReputationDialogue: With Jim and I both working, and Ethan in school,
+          I can rarely get around to it.
+        positiveReputationResponses: []
+        negativeReputationDialogue: I was going to clean them today.
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: The trash in the kitchen has piled up quite a bit.
+      RequiredObjectTag: Pile of Trash
+      NextNode:
+        positiveReputationDialogue: I've asked Jim a hundred times to take the trash
+          out but nothing!
+        positiveReputationResponses: []
+        negativeReputationDialogue: "Jim's taking it out soon, don\u2019t worry about
+          that."
         negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found some broken plates in the trash.
+      RequiredObjectTag: Broken Plates
+      NextNode:
+        positiveReputationDialogue: It happens when Jim gets angry. He throws things.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Oh, that was just an accident.
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I saw some bloody bandages in the trash. Is everything alright?
+      RequiredObjectTag: Used Bandages
+      NextNode:
+        positiveReputationDialogue: Jim hit Ethan with the belt so hard last week.
+          I couldn't do anything.
+        positiveReputationResponses: []
+        negativeReputationDialogue: Ethan fell and scuffed his knee, it's nothing.
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Leave.
@@ -42,7 +337,5 @@ MonoBehaviour:
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    negativeReputationDialogue: 
-    negativeReputationResponses: []
     changeReputation: 0
     changeReputationTo: 0

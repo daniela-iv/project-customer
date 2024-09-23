@@ -13,19 +13,8 @@ MonoBehaviour:
   m_Name: Dad2Dialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: What do you want?
+    positiveReputationDialogue: Can't you see I'm busy?
     positiveReputationResponses:
-    - ResponseText: "Good evening, Mr. Walker. I\u2019m here from social services.
-        A neighbor reported some strange sounds coming from your home, and I need
-        to ask a few questions."
-      RequiredObjectTag: 
-      NextNode:
-        positiveReputationDialogue: Strange sounds? Who told you that?
-        positiveReputationResponses: []
-        negativeReputationDialogue: 
-        negativeReputationResponses: []
-        changeReputation: 0
-        changeReputationTo: 0
     - ResponseText: Leave.
       RequiredObjectTag: 
       NextNode:
@@ -35,7 +24,16 @@ MonoBehaviour:
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    negativeReputationDialogue: 
-    negativeReputationResponses: []
+    negativeReputationDialogue: Can't you see I'm busy?
+    negativeReputationResponses:
+    - ResponseText: Leave.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
     changeReputation: 0
     changeReputationTo: 0

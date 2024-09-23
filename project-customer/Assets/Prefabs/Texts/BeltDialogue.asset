@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BeltDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: Theres a belt on the table.
+    positiveReputationDialogue: There seems to be some blood on this belt.
     positiveReputationResponses:
-    - ResponseText: Inspect it.
+    - ResponseText: Leave.
       RequiredObjectTag: 
       NextNode:
         positiveReputationDialogue: 

@@ -13,133 +13,155 @@ MonoBehaviour:
   m_Name: Child1Dialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: Hi cool person.
+    positiveReputationDialogue: Hello.
     positiveReputationResponses:
-    - ResponseText: Hi cool kid. I have these bandages.
-      RequiredObjectTag: Bandages
+    - ResponseText: How did you like taking these family photos?
+      RequiredObjectTag: Family Photo
       NextNode:
-        positiveReputationDialogue: 
+        positiveReputationDialogue: I really wanted my teddy in the photos but dad
+          just threw him across the room.
         positiveReputationResponses: []
-        negativeReputationDialogue: 
+        negativeReputationDialogue: Boring...
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    - ResponseText: Hi cool kid. I have these pills.
-      RequiredObjectTag: Pills
+    - ResponseText: I found this belt. Has your dad hurt you with it?
+      RequiredObjectTag: Blood Stained Belt
       NextNode:
-        positiveReputationDialogue: 
+        positiveReputationDialogue: "When he\u2019s mad... I try to hide."
         positiveReputationResponses: []
-        negativeReputationDialogue: 
+        negativeReputationDialogue: (Silent)
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    - ResponseText: Hi cool kid. I have these cigarettes.
-      RequiredObjectTag: Cigarettes
+    - ResponseText: Do you know about these bottles?
+      RequiredObjectTag: Alcohol Bottles
       NextNode:
-        positiveReputationDialogue: 
+        positiveReputationDialogue: He hides them. But I know, when he drinks them
+          I have to hide.
         positiveReputationResponses: []
-        negativeReputationDialogue: 
+        negativeReputationDialogue: "No\u2026"
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    - ResponseText: Hi cool kid. I saw your portrait.
-      RequiredObjectTag: Portrait
+    - ResponseText: Hey buddy. Can you tell me about these drawings?
+      RequiredObjectTag: Drawings
       NextNode:
-        positiveReputationDialogue: Really? Nice!
-        positiveReputationResponses:
-        - ResponseText: Yeah bye.
-          RequiredObjectTag: 
-          NextNode:
-            positiveReputationDialogue: 
-            positiveReputationResponses: []
-            negativeReputationDialogue: 
-            negativeReputationResponses: []
-            changeReputation: 0
-            changeReputationTo: 0
-        negativeReputationDialogue: 
-        negativeReputationResponses: []
-        changeReputation: 0
-        changeReputationTo: 0
-    - ResponseText: Leave.
-      RequiredObjectTag: 
-      NextNode:
-        positiveReputationDialogue: 
+        positiveReputationDialogue: "That\u2019s what he looks like when he\u2019s
+          mad."
         positiveReputationResponses: []
-        negativeReputationDialogue: 
+        negativeReputationDialogue: "I was just doodling on the paper\u2026"
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    negativeReputationDialogue: Hi ugly person.
-    negativeReputationResponses:
-    - ResponseText: Hi ugly kid. I have these bandages.
-      RequiredObjectTag: Bandages
+    - ResponseText: I found these cigarettes in your desk. Do you know where they
+        came from?
+      RequiredObjectTag: Cigarette Pack
       NextNode:
-        positiveReputationDialogue: 
+        positiveReputationDialogue: Dad says smoking helps him calm down so I thought
+          I could try...
         positiveReputationResponses: []
-        negativeReputationDialogue: 
+        negativeReputationDialogue: I don't know how they got there, I swear.
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    - ResponseText: Hi ugly kid. I have these pills
-      RequiredObjectTag: Pills
+    - ResponseText: Who usually does the dishes in the house?
+      RequiredObjectTag: Dirty Dishes
       NextNode:
-        positiveReputationDialogue: 
+        positiveReputationDialogue: Dad never helps with the chores. Mom's always
+          so tired.
         positiveReputationResponses: []
-        negativeReputationDialogue: 
+        negativeReputationDialogue: Mom.
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    - ResponseText: Hi ugly kid. I have these cigarettes.
-      RequiredObjectTag: Cigarettes
+    - ResponseText: Does the trash in the kitchen bother you at all?
+      RequiredObjectTag: Pile of Trash
       NextNode:
-        positiveReputationDialogue: Wow I love cigarettes!
-        positiveReputationResponses:
-        - ResponseText: Ok. Bye...
-          RequiredObjectTag: 
-          NextNode:
-            positiveReputationDialogue: 
-            positiveReputationResponses: []
-            negativeReputationDialogue: 
-            negativeReputationResponses: []
-            changeReputation: 0
-            changeReputationTo: 0
-        negativeReputationDialogue: Ugh. I hate cigarettes.
-        negativeReputationResponses:
-        - ResponseText: Ok. Bye.
-          RequiredObjectTag: 
-          NextNode:
-            positiveReputationDialogue: 
-            positiveReputationResponses: []
-            negativeReputationDialogue: 
-            negativeReputationResponses: []
-            changeReputation: 0
-            changeReputationTo: 0
-        changeReputation: 1
+        positiveReputationDialogue: "My nose hurts when I'm in there. Sometimes,
+          I just want to grab a snack\u2026"
+        positiveReputationResponses: []
+        negativeReputationDialogue: I don't go in the kitchen much.
+        negativeReputationResponses: []
+        changeReputation: 0
         changeReputationTo: 0
-    - ResponseText: Hi ugly kid. I saw the portrait.
-      RequiredObjectTag: Portrait
+    - ResponseText: Do you know what happened to these plates?
+      RequiredObjectTag: Broken Plates
       NextNode:
-        positiveReputationDialogue: Wow awesome! I love that portrait.
-        positiveReputationResponses:
-        - ResponseText: Yup. Bye.
-          RequiredObjectTag: 
-          NextNode:
-            positiveReputationDialogue: 
-            positiveReputationResponses: []
-            negativeReputationDialogue: 
-            negativeReputationResponses: []
-            changeReputation: 0
-            changeReputationTo: 0
-        negativeReputationDialogue: 
+        positiveReputationDialogue: He's always breaking things when he's drunk.
+          I can't keep replacing plates every week!
+        positiveReputationResponses: []
+        negativeReputationDialogue: (Silent)
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Do you happen to know whose bandages these are?
+      RequiredObjectTag: Used Bandages
+      NextNode:
+        positiveReputationDialogue: They're mine. I'm all better though, promise!
+        positiveReputationResponses: []
+        negativeReputationDialogue: (Silent)
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Hey, you like superheroes too? Sweet!
+      RequiredObjectTag: Superhero Poster
+      NextNode:
+        positiveReputationDialogue: Yeah! Mom says one day I might be able to be
+          one myself!
+        positiveReputationResponses: []
+        negativeReputationDialogue: Yeah! Mom says one day I might be able to be
+          one myself!
         negativeReputationResponses: []
         changeReputation: 1
         changeReputationTo: 1
     - ResponseText: Leave.
       RequiredObjectTag: 
       NextNode:
-        positiveReputationDialogue: Wow awesome! I love that portrait.
-        positiveReputationResponses:
-        - ResponseText: Yup. Bye.
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    negativeReputationDialogue: Hi...
+    negativeReputationResponses:
+    - ResponseText: How are things in the house? Anything bothering you lately?
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: Umm... things are fine. Everything's fine.
+        negativeReputationResponses:
+        - ResponseText: Are you sure? Maybe if we...
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+            negativeReputationResponses:
+            - ResponseText: <i>He's reluctant to answer with Jim nearby. Gotta find
+                a way to get him out of the room.</i>
+              RequiredObjectTag: 
+              NextNode:
+                positiveReputationDialogue: 
+                positiveReputationResponses: []
+                negativeReputationDialogue: 
+                negativeReputationResponses: []
+                changeReputation: 0
+                changeReputationTo: 0
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: How did you like taking these family photos?
+      RequiredObjectTag: Family Photo
+      NextNode:
+        positiveReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        positiveReputationResponses: []
+        negativeReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        negativeReputationResponses:
+        - ResponseText: Leave.
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 
@@ -148,6 +170,158 @@ MonoBehaviour:
             negativeReputationResponses: []
             changeReputation: 0
             changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found this belt. Has your dad hurt you with it?
+      RequiredObjectTag: Blood Stained Belt
+      NextNode:
+        positiveReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        positiveReputationResponses: []
+        negativeReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Do you know about these bottles?
+      RequiredObjectTag: Alcohol Bottles
+      NextNode:
+        positiveReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        positiveReputationResponses: []
+        negativeReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Hey buddy. Can you tell me about these drawings?
+      RequiredObjectTag: Drawings
+      NextNode:
+        positiveReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        positiveReputationResponses: []
+        negativeReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: I found these cigarettes in your desk. Do you know where they
+        came from?
+      RequiredObjectTag: Cigarette Pack
+      NextNode:
+        positiveReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        positiveReputationResponses: []
+        negativeReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Who usually does the dishes in the house?
+      RequiredObjectTag: Dirty Dishes
+      NextNode:
+        positiveReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        positiveReputationResponses: []
+        negativeReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Does the trash in the kitchen bother you at all?
+      RequiredObjectTag: Pile of Trash
+      NextNode:
+        positiveReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        positiveReputationResponses: []
+        negativeReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Do you know what happened to these plates?
+      RequiredObjectTag: Broken Plates
+      NextNode:
+        positiveReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        positiveReputationResponses: []
+        negativeReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Do you happen to know whose bandages these are?
+      RequiredObjectTag: Used Bandages
+      NextNode:
+        positiveReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        positiveReputationResponses: []
+        negativeReputationDialogue: <i>Ethan looks at Jim, hesitant to answer.</i>
+        negativeReputationResponses:
+        - ResponseText: Leave.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 0
+        changeReputationTo: 0
+    - ResponseText: Leave.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
         negativeReputationDialogue: 
         negativeReputationResponses: []
         changeReputation: 0

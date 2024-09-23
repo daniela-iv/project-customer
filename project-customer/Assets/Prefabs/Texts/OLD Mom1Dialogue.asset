@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba17766de0eca3d4caca8a1c663adcee, type: 3}
-  m_Name: BandagesDialogue
+  m_Name: OLD Mom1Dialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: Some used bandages with a lot of blood on them.
+    positiveReputationDialogue: How can I help you?
     positiveReputationResponses:
-    - ResponseText: Rotate the bandage.
+    - ResponseText: How are things in the house? Any recent arguments perhaps?
       RequiredObjectTag: 
       NextNode:
-        positiveReputationDialogue: There's blood on the other side.
+        positiveReputationDialogue: Oh, of course not! Isn't that right honey? Hahah...
         positiveReputationResponses:
-        - ResponseText: Put the bandage down.
+        - ResponseText: Leave.
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 
@@ -33,7 +33,16 @@ MonoBehaviour:
         negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
-    negativeReputationDialogue: 
+    - ResponseText: Leave.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
+    negativeReputationDialogue: Yes?
     negativeReputationResponses: []
     changeReputation: 0
     changeReputationTo: 0

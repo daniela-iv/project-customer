@@ -14,7 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RootNode:
     positiveReputationDialogue: 'A bunch of empty alcohol bottles in the closet. '
-    positiveReputationResponses: []
+    positiveReputationResponses:
+    - ResponseText: Leave.
+      RequiredObjectTag: 
+      NextNode:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: 
+        negativeReputationResponses: []
+        changeReputation: 0
+        changeReputationTo: 0
     negativeReputationDialogue: 
     negativeReputationResponses: []
     changeReputation: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DishesDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: There's a bunch of dirty dishes in the sink.
+    positiveReputationDialogue: These dishes must have been here for days.
     positiveReputationResponses:
     - ResponseText: Leave.
       RequiredObjectTag: 
