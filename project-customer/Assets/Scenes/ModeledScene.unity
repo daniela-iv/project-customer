@@ -1107,6 +1107,10 @@ PrefabInstance:
       propertyPath: ItemDialogue
       value: 
       objectReference: {fileID: 11400000, guid: 8d7cdcecf7bdb064dae6c86d36ee6266, type: 2}
+    - target: {fileID: 4174859560999386992, guid: b8c9189163951c84386928cbfe442971, type: 3}
+      propertyPath: inspectModel
+      value: 
+      objectReference: {fileID: 6080166843735244089, guid: f3f3ee57ebf02e34aa668b5e061b2663, type: 3}
     - target: {fileID: 5670031264449787837, guid: b8c9189163951c84386928cbfe442971, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.415807
@@ -1399,7 +1403,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 74e76dbd819f3cb428bb5ff3de4f9cd2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3a6e23d4a074bcb42b5cc07a88b68990, type: 2}
+      objectReference: {fileID: 2100000, guid: 06fc4f27dc4537f408f69548ec2cc68a, type: 2}
     - target: {fileID: 919132149155446097, guid: 74e76dbd819f3cb428bb5ff3de4f9cd2, type: 3}
       propertyPath: m_Name
       value: pillbottle_full
@@ -1453,7 +1457,6 @@ Transform:
   - {fileID: 542237436}
   - {fileID: 86630944}
   - {fileID: 1610397103}
-  - {fileID: 761869557}
   - {fileID: 415149985}
   - {fileID: 843823295}
   - {fileID: 1092832784}
@@ -2624,7 +2627,7 @@ MonoBehaviour:
   Name: Blood Stained Belt
   ItemDialogue: {fileID: 11400000, guid: fc226456063b0ff419b91f6a3dba73b3, type: 2}
   ItemNote: This belt looks pretty worn, and I see some blood on it as well.
-  inspectModel: {fileID: 8754805250556345844, guid: 56a07c04856a67f4fb3a2da7fac8a362, type: 3}
+  inspectModel: {fileID: 861982826945692580, guid: 51a788827e8d7a344ab9530c0a1cdc10, type: 3}
   interactionType: 1
 --- !u!4 &238984024 stripped
 Transform:
@@ -4315,7 +4318,7 @@ PrefabInstance:
     - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: inspectModel
       value: 
-      objectReference: {fileID: 8400448718183617971, guid: 677d52bd834949d4a880e235cfa46d7c, type: 3}
+      objectReference: {fileID: 7269017491113696614, guid: 80517a126692e1c4cb2a240eb9f9fc34, type: 3}
     - target: {fileID: 5151726387750044856, guid: 19e53aafed3223b4683c005f306ad6c8, type: 3}
       propertyPath: interactionType
       value: 1
@@ -4891,6 +4894,10 @@ PrefabInstance:
       propertyPath: ItemDialogue
       value: 
       objectReference: {fileID: 11400000, guid: 6e98cc616ae213a47991a912af8fd943, type: 2}
+    - target: {fileID: 4174859560999386992, guid: b8c9189163951c84386928cbfe442971, type: 3}
+      propertyPath: inspectModel
+      value: 
+      objectReference: {fileID: 7313258537182737355, guid: eaeb285ae8805fa4798c5e45a2b839b2, type: 3}
     - target: {fileID: 5670031264449787837, guid: b8c9189163951c84386928cbfe442971, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.68887
@@ -5543,7 +5550,7 @@ MonoBehaviour:
   Name: Cigarette Pack
   ItemDialogue: {fileID: 11400000, guid: 1a9cc3259b764fd4887d7919f4540d39, type: 2}
   ItemNote: A pack of cigarettes. Looks like there's a few missing too.
-  inspectModel: {fileID: 9051895220731844831, guid: a7f4dddd8c8e67a48b75cd14722c0303, type: 3}
+  inspectModel: {fileID: 1604293664798933883, guid: 4ac086f555a66fc43bdf2d810cf8e938, type: 3}
   interactionType: 1
 --- !u!4 &625575018 stripped
 Transform:
@@ -6805,91 +6812,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1001 &761869556
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 101116035}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 7.5963717
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 7.596372
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 7.5963717
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.232254
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.2802472
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.8726034
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9311467
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.36464483
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -42.771
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d14e527c6e6f7ee4394015cf24b22ed1, type: 2}
-    - target: {fileID: 919132149155446097, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_Name
-      value: bloody_bandages
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      propertyPath: m_TagString
-      value: Item
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1735420095}
-  m_SourcePrefab: {fileID: 100100000, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
---- !u!4 &761869557 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-  m_PrefabInstance: {fileID: 761869556}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &764350789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8392,7 +8314,7 @@ MonoBehaviour:
   Name: Dirty Dishes
   ItemDialogue: {fileID: 11400000, guid: 6e98cc616ae213a47991a912af8fd943, type: 2}
   ItemNote: This food must've stayed out for at least a week to reach this state.
-  inspectModel: {fileID: 0}
+  inspectModel: {fileID: 7313258537182737355, guid: eaeb285ae8805fa4798c5e45a2b839b2, type: 3}
   interactionType: 0
 --- !u!1001 &876464646
 PrefabInstance:
@@ -12382,7 +12304,7 @@ MonoBehaviour:
   Name: Cigarette Pack
   ItemDialogue: {fileID: 11400000, guid: 1a9cc3259b764fd4887d7919f4540d39, type: 2}
   ItemNote: A pack of cigarettes. Looks like there's a few missing too.
-  inspectModel: {fileID: 9051895220731844831, guid: a7f4dddd8c8e67a48b75cd14722c0303, type: 3}
+  inspectModel: {fileID: 1604293664798933883, guid: 4ac086f555a66fc43bdf2d810cf8e938, type: 3}
   interactionType: 1
 --- !u!1001 &1444260581
 PrefabInstance:
@@ -13357,17 +13279,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 101116035}
     m_Modifications:
+    - target: {fileID: 988741680796460221, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7769d2715c79ee84793d8014fb59e49f, type: 2}
     - target: {fileID: 2195534236689191227, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_Name
       value: fusebox
       objectReference: {fileID: 0}
+    - target: {fileID: 3359239693069050009, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 5999801800477934532, guid: 7585cffbb7e4986428d44b080fd6305c, type: 3}
+    - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.005
+      objectReference: {fileID: 0}
     - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6735
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.20759808
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13375,19 +13309,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7132473
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.884
+      value: -2.414
       objectReference: {fileID: 0}
     - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.00000017881392
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_LocalRotation.y
@@ -13395,7 +13329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7334248621310727396, guid: d055c13be8401b74fa2e5ba81d80b80d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14489,28 +14423,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!1 &1735420094 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 33fedb9f591605f4e994365d3564af86, type: 3}
-  m_PrefabInstance: {fileID: 761869556}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1735420095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735420094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28846f9cdbad74741afd409110d5fd9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Used Bandages
-  ItemDialogue: {fileID: 11400000, guid: fc226456063b0ff419b91f6a3dba73b3, type: 2}
-  ItemNote: Looks like someone had some serious injuries recently.
-  inspectModel: {fileID: 4648825111419878418, guid: de573dcc1b073574e9fd81d438e4a526, type: 3}
-  interactionType: 1
 --- !u!1001 &1747887780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16073,6 +15985,10 @@ PrefabInstance:
       propertyPath: ItemDialogue
       value: 
       objectReference: {fileID: 11400000, guid: 2c17f12b9b6f13346890a7cfc581b35e, type: 2}
+    - target: {fileID: 4174859560999386992, guid: b8c9189163951c84386928cbfe442971, type: 3}
+      propertyPath: inspectModel
+      value: 
+      objectReference: {fileID: 8138418159236437146, guid: d2da1be282984ed41b37860b20090887, type: 3}
     - target: {fileID: 5670031264449787837, guid: b8c9189163951c84386928cbfe442971, type: 3}
       propertyPath: m_LocalScale.x
       value: 4.173
