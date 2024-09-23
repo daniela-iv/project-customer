@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private FadeScript fade;
 
     [SerializeField]
+    private GameObject dad0;
+    [SerializeField]
     private GameObject dad1;
     [SerializeField]
     private GameObject dad2;
@@ -80,9 +82,6 @@ public class GameManager : MonoBehaviour
         float timer = dadTimer;
         while (timer > 0f)
         {
-            if(timer < dadTimer - 4f)
-                changeCharacters();
-
             timer -= 1f;
             yield return new WaitForSecondsRealtime(1f);
         }
@@ -93,16 +92,23 @@ public class GameManager : MonoBehaviour
 
     public void changeCharacters()
     {
-
-        dad1.SetActive(false);
-        mom1.SetActive(false);
-        son1.SetActive(false);
-        mom2.GetComponent<Actor>().reputation = mom1.GetComponent<Actor>().reputation;
-        dad2.GetComponent<Actor>().reputation= dad1.GetComponent<Actor>().reputation;
-        son2.GetComponent<Actor>().reputation= son1.GetComponent<Actor>().reputation;
-        dad2.SetActive(true);
-        mom2.SetActive(true);
-        son2.SetActive(true);
+        if (dad0.activeSelf)
+        {
+            dad0.SetActive(false);
+            dad1.SetActive(true);
+        }
+        else
+        {
+            dad1.SetActive(false);
+            mom1.SetActive(false);
+            son1.SetActive(false);
+            mom2.GetComponent<Actor>().reputation = mom1.GetComponent<Actor>().reputation;
+            dad2.GetComponent<Actor>().reputation = dad1.GetComponent<Actor>().reputation;
+            son2.GetComponent<Actor>().reputation = son1.GetComponent<Actor>().reputation;
+            dad2.SetActive(true);
+            mom2.SetActive(true);
+            son2.SetActive(true);
+        }
     }
 
     public void EndGame(bool dadKickedOut)
