@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     private float dadTimer;
 
 
-    private GameState gameState = GameState.firstStage;
+    public GameState gameState = GameState.firstStage;
 
     public enum GameState
     {
