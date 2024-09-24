@@ -306,6 +306,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Player frozen: " + doFreeze);
         inDialogue = doFreeze;
         player.GetComponent<MouseLook>().CanLookAround = !doFreeze;
+        player.GetComponent<SimplePhysicsControls>().canMove = !doFreeze;
         Camera.main.GetComponent<MouseLook>().CanLookAround = !doFreeze;
     }
 

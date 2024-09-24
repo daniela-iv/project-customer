@@ -20,6 +20,7 @@ public class SimplePhysicsControls : MonoBehaviour
 
     Rigidbody rb;
     bool grounded;
+    public bool canMove = true;
 
     void Start()
     {
@@ -75,7 +76,7 @@ public class SimplePhysicsControls : MonoBehaviour
     {
         //add func here
         Vector3 moveVector = GetCameraRelativeVector();
-            //new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        //new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
 
         //transform.Translate(moveVector * moveSpeed);
@@ -89,33 +90,36 @@ public class SimplePhysicsControls : MonoBehaviour
             control = ControlType.Force;
         }
 
-        switch (control)
+        if (canMove)
         {
-            case ControlType.Force:
-                if(Input.GetButton("Sprint"))
-                {
-                    rb.AddForce(moveVector * moveForce * SprintMultiplierForce);
-                }
-                else
-                {
-                    rb.AddForce(moveVector * moveForce);
-                }
-                break;
-            case ControlType.Velocity:
-                Vector3 newVelocity = new Vector3(0, rb.velocity.y, 0);
-                if (Input.GetButton("Sprint"))
-                {
-                    newVelocity += moveVector * moveSpeed * SprintMultiplierSpeed;
-                }
-                else
-                {
-                    newVelocity += moveVector * moveSpeed;
-                }
+            switch (control)
+            {
+                case ControlType.Force:
+                    if (Input.GetButton("Sprint"))
+                    {
+                        rb.AddForce(moveVector * moveForce * SprintMultiplierForce);
+                    }
+                    else
+                    {
+                        rb.AddForce(moveVector * moveForce);
+                    }
+                    break;
+                case ControlType.Velocity:
+                    Vector3 newVelocity = new Vector3(0, rb.velocity.y, 0);
+                    if (Input.GetButton("Sprint"))
+                    {
+                        newVelocity += moveVector * moveSpeed * SprintMultiplierSpeed;
+                    }
+                    else
+                    {
+                        newVelocity += moveVector * moveSpeed;
+                    }
 
-                rb.velocity = newVelocity;
-                break;
+                    rb.velocity = newVelocity;
+                    break;
+            }
+            grounded = false;
         }
-        grounded = false;
     }
 
     private void OnCollisionStay(Collision collision)
