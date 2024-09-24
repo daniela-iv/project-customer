@@ -14,6 +14,7 @@ public class Inspect : MonoBehaviour
                 mouseLook.CanLookAround = true;
             }
             Destroy(GetComponentInChildren<InspectRotate>().gameObject);
+            GameManager.Instance.crosshair.SetActive(true);
             gameObject.SetActive(false);
         }
     }

@@ -13701,6 +13701,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 7819b5435f25721498029e72f7905322, type: 3}
     - target: {fileID: 2254751033462522740, guid: b2236b9ab0618d04580ec497094ec023, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 1245090097}
+    - target: {fileID: 2254751033462522740, guid: b2236b9ab0618d04580ec497094ec023, type: 3}
       propertyPath: loseAudio
       value: 
       objectReference: {fileID: 8300000, guid: 508eda62488f9de479a113122f1e2a05, type: 3}
@@ -15715,6 +15719,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 621.6558, y: 648.56537, z: 85.48879}
   m_Center: {x: 0, y: 0.000061035156, z: -0.0009841919}
+--- !u!1 &1245090097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2103222298026395791, guid: a127815800f47c1469146a264be8ae19, type: 3}
+  m_PrefabInstance: {fileID: 1635466141}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1251614472
 GameObject:
   m_ObjectHideFlags: 0

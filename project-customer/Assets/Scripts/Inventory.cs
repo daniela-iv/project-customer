@@ -53,7 +53,6 @@ public class Inventory : MonoBehaviour
                     if(numOfNotes >= 5)
                     {
                         textRight.text += "<BR>" + item.ItemNote;
-                        print("tetaovhfAEPIHLSBDEFPICA;KN");
                         numOfNotes++;
                     }
                     else if (numOfNotes < 5)
