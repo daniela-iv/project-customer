@@ -164,20 +164,26 @@ MonoBehaviour:
         to ask a few questions."
       RequiredObjectTag: 
       NextNode:
-        positiveReputationDialogue: Strange sounds? Who told you that?
-        positiveReputationResponses:
+        positiveReputationDialogue: 
+        positiveReputationResponses: []
+        negativeReputationDialogue: Strange sounds? Who told you that?
+        negativeReputationResponses:
         - ResponseText: "I just need to have a quick look around to ensure everything\u2019s
             okay."
           RequiredObjectTag: 
           NextNode:
-            positiveReputationDialogue: I want to see your ID first.
-            positiveReputationResponses:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: I want to see your ID first.
+            negativeReputationResponses:
             - ResponseText: '*Show him your ID.*'
               RequiredObjectTag: 
               NextNode:
-                positiveReputationDialogue: "Alright. Get in and do what you need
+                positiveReputationDialogue: 
+                positiveReputationResponses: []
+                negativeReputationDialogue: "Alright. Get in and do what you need
                   to, but don\u2019t waste my time."
-                positiveReputationResponses:
+                negativeReputationResponses:
                 - ResponseText: Alright.
                   RequiredObjectTag: 
                   NextNode:
@@ -187,109 +193,179 @@ MonoBehaviour:
                     negativeReputationResponses: []
                     changeReputation: 0
                     changeReputationTo: 0
-                negativeReputationDialogue: 
-                negativeReputationResponses: []
                 changeReputation: 0
                 changeReputationTo: 0
-            negativeReputationDialogue: 
-            negativeReputationResponses: []
             changeReputation: 0
             changeReputationTo: 0
-        negativeReputationDialogue: 
-        negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: You have a beautiful family, Jim. Why is Ethan not smiling in
         these photos, though?
       RequiredObjectTag: Family Photo
       NextNode:
-        positiveReputationDialogue: What do I know?
+        positiveReputationDialogue: 
         positiveReputationResponses: []
         negativeReputationDialogue: What do I know?
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found this belt. Any reason it is covered in blood?
       RequiredObjectTag: Blood Stained Belt
       NextNode:
-        positiveReputationDialogue: I had to use it to wack away a rabid raccoon.
-          Nasty stuff.
+        positiveReputationDialogue: 
         positiveReputationResponses: []
         negativeReputationDialogue: I had to use it to wack away a rabid raccoon.
           Nasty stuff.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found bottles in the closet from your room.
       RequiredObjectTag: Alcohol Bottles
       NextNode:
-        positiveReputationDialogue: So? I like a drink in the evening to unwind after
-          my 10 hour shift!
+        positiveReputationDialogue: 
         positiveReputationResponses: []
         negativeReputationDialogue: So? I like a drink in the evening to unwind after
           my 10 hour shift!
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found some artwork that Ethan's made. Have you seen these?
       RequiredObjectTag: Drawings
       NextNode:
-        positiveReputationDialogue: The kid draws too much. I told him he better
-          get good scores on his math test.
+        positiveReputationDialogue: 
         positiveReputationResponses: []
         negativeReputationDialogue: The kid draws too much. I told him he better
           get good scores on his math test.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: Alright.
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: "I found cigarettes hidden in Ethan\u2019s room. Do you know
         about this?"
       RequiredObjectTag: Cigarette Pack
       NextNode:
-        positiveReputationDialogue: Hah! Linda messed up again. We'll discuss it
-          later.
+        positiveReputationDialogue: 
         positiveReputationResponses: []
-        negativeReputationDialogue: Hah! Linda messed up again. We'll discuss it
+        negativeReputationDialogue: Hah! Linda messed up again... We'll discuss it
           later.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Those dishes in the kitchen seem to have been out for a while.
       RequiredObjectTag: Dirty Dishes
       NextNode:
-        positiveReputationDialogue: Linda's been slacking off. I rarely set foot
-          in there these days.
+        positiveReputationDialogue: 
         positiveReputationResponses: []
         negativeReputationDialogue: Linda's been slacking off. I rarely set foot
           in there these days.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: The trash in the kitchen has piled up quite a bit.
       RequiredObjectTag: Pile of Trash
       NextNode:
-        positiveReputationDialogue: Are you gonna get on my ass about that too?
+        positiveReputationDialogue: 
         positiveReputationResponses: []
         negativeReputationDialogue: Are you gonna get on my ass about that too?
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found some broken plates in the trash.
       RequiredObjectTag: Broken Plates
       NextNode:
-        positiveReputationDialogue: "Linda's just\u2026 very clumsy."
+        positiveReputationDialogue: 
         positiveReputationResponses: []
         negativeReputationDialogue: "Linda's just\u2026 very clumsy."
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I saw some bloody bandages in the trash. Is everything alright?
       RequiredObjectTag: Used Bandages
       NextNode:
-        positiveReputationDialogue: Got injured at work, forget about it.
+        positiveReputationDialogue: 
         positiveReputationResponses: []
         negativeReputationDialogue: Got injured at work, forget about it.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Leave.

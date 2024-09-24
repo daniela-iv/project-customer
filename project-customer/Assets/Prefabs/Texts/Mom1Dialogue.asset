@@ -21,10 +21,28 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: I couldn't get him to. When his dad's around,
           he just locks up.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: He was probably sad he didn't have his teddy
           with him.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found this belt. Any reason it is covered in blood?
@@ -32,9 +50,27 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: "He uses it when he\u2019s angry. I\u2019ve tried
           to protect Ethan once\u2026"
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: "No! It\u2019s just old."
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found bottles in the closet from your room.
@@ -42,9 +78,27 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: When he drinks, everything changes. He just starts
           swinging and I never know what to do.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: "Jim drinks sometimes... it\u2019s no big deal."
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: "I found some artwork. It seems Ethan\u2019s been drawing his
@@ -53,9 +107,27 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: "I\u2019ve seen them... he\u2019s afraid, but
           I don't know how to help him."
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: It's just a drawing, nothing more!
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: "I found cigarettes hidden in Ethan\u2019s room. Do you know
@@ -64,10 +136,28 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: "This is the first I'm hearing of this. I should've
           noticed sooner\u2026"
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: They are mine. Ethan must've taken them out of
           my bag.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Those dishes in the kitchen seem to have been out for a while.
@@ -75,9 +165,27 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: With Jim and I both working, and Ethan in school,
           I can rarely get around to it.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: I was going to clean them today.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: The trash in the kitchen has piled up quite a bit.
@@ -85,19 +193,55 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: I've asked Jim a hundred times to take the trash
           out but nothing!
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: "Jim's taking it out soon, don\u2019t worry about
           that."
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found some broken plates in the trash.
       RequiredObjectTag: Broken Plates
       NextNode:
         positiveReputationDialogue: It happens when Jim gets angry. He throws things.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: Oh, that was just an accident.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I saw some bloody bandages in the trash. Is everything alright?
@@ -105,9 +249,27 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: Jim hit Ethan with the belt so hard last week.
           I couldn't do anything.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: Ethan fell and scuffed his knee, it's nothing.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found some pretty heavy antidepressants. Are you alright, Linda?
@@ -115,10 +277,28 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: "After the yelling and drinking, I don\u2019t
           know how to cope anymore. It\u2019s just too much."
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: "After the yelling and drinking, I don\u2019t
           know how to cope anymore. It\u2019s just too much."
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 1
         changeReputationTo: 1
     - ResponseText: Leave.
@@ -135,8 +315,29 @@ MonoBehaviour:
     - ResponseText: How are things in the house? Any recent arguments perhaps?
       RequiredObjectTag: 
       NextNode:
-        positiveReputationDialogue: Oh, of course not! Isn't that right honey? Hahah...
+        positiveReputationDialogue: 
         positiveReputationResponses:
+        - ResponseText: 
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: ' '
+            negativeReputationResponses:
+            - ResponseText: <i>Feels like she's walking on eggshells around Jim.
+                I wonder what I could do...</i>
+              RequiredObjectTag: 
+              NextNode:
+                positiveReputationDialogue: 
+                positiveReputationResponses: []
+                negativeReputationDialogue: 
+                negativeReputationResponses: []
+                changeReputation: 0
+                changeReputationTo: 0
+            changeReputation: 0
+            changeReputationTo: 0
+        negativeReputationDialogue: Oh, of course not! Isn't that right honey? Hahah...
+        negativeReputationResponses:
         - ResponseText: I'm here on a wellness check because the neighbors heard
             -
           RequiredObjectTag: 
@@ -158,8 +359,6 @@ MonoBehaviour:
                 changeReputationTo: 0
             changeReputation: 0
             changeReputationTo: 0
-        negativeReputationDialogue: 
-        negativeReputationResponses: []
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: You have a beautiful family, Linda. Why is Ethan not smiling
@@ -168,10 +367,19 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: I couldn't get him to. When his dad's around,
           he just locks up.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: 'Like Jim says: Kid''s these days.'
         negativeReputationResponses:
-        - ResponseText: Leave.
+        - ResponseText: <i>Leave.</i>
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 
@@ -187,10 +395,19 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: "He uses it when he\u2019s angry. I\u2019ve tried
           to protect Ethan once\u2026"
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: That's just Jim's old work belt.
         negativeReputationResponses:
-        - ResponseText: Leave.
+        - ResponseText: <i>Leave.</i>
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 
@@ -206,11 +423,20 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: When he drinks, everything changes. He just starts
           swinging and I never know what to do.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: Jim enjoys a nightcap - there's nothing deep
           to it.
         negativeReputationResponses:
-        - ResponseText: Leave.
+        - ResponseText: <i>Leave.</i>
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 
@@ -226,10 +452,19 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: "I\u2019ve seen them... he\u2019s afraid, but
           I don't know how to help him."
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: Our boy is very talented. Isn't it nice?
         negativeReputationResponses:
-        - ResponseText: Leave.
+        - ResponseText: <i>Leave.</i>
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 
@@ -246,11 +481,20 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: "This is the first I'm hearing of this. I should've
           noticed sooner\u2026"
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: They are mine. Ethan must've taken them out of
           my bag.
         negativeReputationResponses:
-        - ResponseText: Leave.
+        - ResponseText: <i>Leave.</i>
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 
@@ -266,10 +510,19 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: With Jim and I both working, and Ethan in school,
           I can rarely get around to it.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: I was going to clean them today.
         negativeReputationResponses:
-        - ResponseText: Leave.
+        - ResponseText: <i>Leave.</i>
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 
@@ -285,17 +538,44 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: I've asked Jim a hundred times to take the trash
           out but nothing!
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: "Jim's taking it out soon, don\u2019t worry about
           that."
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found some broken plates in the trash.
       RequiredObjectTag: Broken Plates
       NextNode:
         positiveReputationDialogue: It happens when Jim gets angry. He throws things.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: Oh, that was just an accident.
         negativeReputationResponses:
         - ResponseText: Leave.
@@ -314,10 +594,19 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: Jim hit Ethan with the belt so hard last week.
           I couldn't do anything.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: Ethan fell and scuffed his knee, it's nothing.
         negativeReputationResponses:
-        - ResponseText: Leave.
+        - ResponseText: <i>Leave.</i>
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 

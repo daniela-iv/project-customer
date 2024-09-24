@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class OpenScript : MonoBehaviour
 {
@@ -9,10 +11,16 @@ public class OpenScript : MonoBehaviour
     [SerializeField]
     private GameObject doorOpened;
 
+    string filepath;
+    string audioName;
+   public AudioSource source;
+    public AudioClip openSound;
+    public AudioClip closeSound;
     public bool isOpen;
 
     public void Open()
     {
+        source.PlayOneShot(openSound);
         doorClosed.SetActive(false);
         doorOpened.SetActive(true);
         isOpen = true;
@@ -20,6 +28,8 @@ public class OpenScript : MonoBehaviour
     
     public void Close()
     {
+        source.PlayOneShot(closeSound);
+        
         doorClosed.SetActive(true);
         doorOpened.SetActive(false);
         isOpen = false;
