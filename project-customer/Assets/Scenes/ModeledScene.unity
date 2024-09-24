@@ -24808,6 +24808,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3073351836408811599, guid: a127815800f47c1469146a264be8ae19, type: 3}
+      propertyPath: m_ScrollSensitivity
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3314848567820632246, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
