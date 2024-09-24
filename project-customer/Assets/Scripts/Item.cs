@@ -15,6 +15,9 @@ public class Item : MonoBehaviour
     public InteractionType interactionType;
     private bool isItem = true;
 
+    [SerializeField]
+    private AudioClip clip;
+
     public enum InteractionType
     {
         Text,
@@ -29,6 +32,7 @@ public class Item : MonoBehaviour
             case InteractionType.Text:
                 Debug.Log("item with text interact");
                 DialogueManager dialogueManager = DialogueManager.Instance;
+                GetComponent<AudioSource>().PlayOneShot(clip);
                 if (dialogueManager.inDialogue)
                 {
                     dialogueManager.HideDialogue();
@@ -47,6 +51,7 @@ public class Item : MonoBehaviour
                     inspect.SetActive(true);
                     Instantiate(inspectModel, inspectObjPos.transform.position, Quaternion.identity, inspectObjPos.transform);
                     Camera.main.GetComponent<MouseLook>().CanLookAround = false;
+                    GetComponent<AudioSource>().PlayOneShot(clip);
                     GameObject.FindGameObjectWithTag("Player").GetComponent<MouseLook>().CanLookAround = false;
                 }
                 break;
