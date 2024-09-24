@@ -96,6 +96,7 @@ public class GameManager : MonoBehaviour
         {
             dad0.SetActive(false);
             dad1.SetActive(true);
+            dad1.GetComponent<Actor>().reputation = dad0.GetComponent<Actor>().reputation;
         }
         else
         {
