@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float dadTimer;
 
+    public AudioSource menuMusic;
+    public AudioSource gameMusic;
 
     public GameState gameState = GameState.firstStage;
 

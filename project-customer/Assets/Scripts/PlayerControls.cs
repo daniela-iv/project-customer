@@ -30,11 +30,11 @@ public class SimplePhysicsControls : MonoBehaviour
 
     private void Update()
     {
-        if (IsGrounded() &&
+      /*  if (IsGrounded() &&
             Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity += new Vector3(0, jumpForce, 0);
-        }
+        }*/
     }
 
     bool IsGrounded()

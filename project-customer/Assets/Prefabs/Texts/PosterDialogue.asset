@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PosterDialogue
   m_EditorClassIdentifier: 
   RootNode:
-    positiveReputationDialogue: Ethan must love superheros. I should ask him about
-      them...
+    positiveReputationDialogue: Ethan must love Winnie the Pooh. I should ask him
+      about it...
     positiveReputationResponses:
     - ResponseText: Leave.
       RequiredObjectTag: 
