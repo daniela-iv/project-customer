@@ -21,8 +21,8 @@ public class OpenScript : MonoBehaviour
     public void Open()
     {
         source.PlayOneShot(openSound);
-        doorClosed.SetActive(false);
         doorOpened.SetActive(true);
+        doorClosed.SetActive(false);
         isOpen = true;
     }
     

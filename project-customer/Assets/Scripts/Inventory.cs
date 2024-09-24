@@ -11,11 +11,15 @@ public class Inventory : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI text;
+    [SerializeField]
+    private TextMeshProUGUI textRight;
 
     [SerializeField]
     private CanvasGroup journal;
     [SerializeField]
     private FadeScript icon;
+
+    private int numOfNotes;
 
 
     // Start is called before the first frame update
@@ -46,7 +50,17 @@ public class Inventory : MonoBehaviour
                 {
                     invSlots[i].itemInSlot = item;
                     icon.fadeIn();
-                    text.text += "<BR>" + item.ItemNote;
+                    if(numOfNotes >= 5)
+                    {
+                        textRight.text += "<BR>" + item.ItemNote;
+                        print("tetaovhfAEPIHLSBDEFPICA;KN");
+                        numOfNotes++;
+                    }
+                    else if (numOfNotes < 5)
+                    { 
+                        text.text += "<BR>" + item.ItemNote;
+                        numOfNotes++;
+                    }
                     break;
                 }
             }
