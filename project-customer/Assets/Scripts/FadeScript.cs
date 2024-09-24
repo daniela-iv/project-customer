@@ -47,6 +47,10 @@ public class FadeScript : MonoBehaviour
 
         while (canvasGroup.alpha < 1f)
         {
+            if(isTrigger && !DialogueManager.Instance.inDialogue)
+                DialogueManager.Instance.FreezePlayer(true);
+
+
             canvasGroup.alpha += fadeSpeed;
             yield return new WaitForSecondsRealtime(0.01f);
         }
@@ -84,6 +88,7 @@ public class FadeScript : MonoBehaviour
             canvasGroup.alpha -= fadeSpeed;
             yield return new WaitForSecondsRealtime(0.01f);
         }
+        DialogueManager.Instance.FreezePlayer(false);
         StopCoroutine("fadeImageOut");
         
     }
