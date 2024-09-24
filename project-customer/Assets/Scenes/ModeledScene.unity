@@ -15111,7 +15111,7 @@ PrefabInstance:
     - target: {fileID: 800554902488020300, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: Dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 8c8ff685b0b56ca4cb650e2fcabf8b66, type: 2}
+      objectReference: {fileID: 11400000, guid: 7a955e2565632de4faf010a9232b7370, type: 2}
     - target: {fileID: 800554902488020300, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: negativeFace
       value: 
