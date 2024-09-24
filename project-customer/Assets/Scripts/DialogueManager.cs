@@ -33,6 +33,8 @@ public class DialogueManager : MonoBehaviour
     private GameObject dad0;
     [SerializeField]
     private GameObject dad1;
+    [SerializeField]
+    private GameObject dad3;
 
     private void Awake()
     {
@@ -282,6 +284,10 @@ public class DialogueManager : MonoBehaviour
         if(dad0.activeSelf)
         {
             GameManager.Instance.Fade();
+        }
+        else if(dad3.activeSelf)
+        {
+            GameManager.Instance.EndGame(true);
         }
 
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;

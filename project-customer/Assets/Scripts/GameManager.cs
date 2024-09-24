@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     private GameObject dad1;
     [SerializeField]
     private GameObject dad2;
+    [SerializeField]
+    private GameObject dad3;
     [SerializeField]
     private GameObject son1;
     [SerializeField]
@@ -40,7 +43,7 @@ public class GameManager : MonoBehaviour
     public AudioSource menuMusic;
     public AudioSource gameMusic;
 
-    private GameState gameState = GameState.firstStage;
+    public GameState gameState = GameState.firstStage;
 
     public enum GameState
     {
@@ -89,9 +92,23 @@ public class GameManager : MonoBehaviour
             timer -= 1f;
             yield return new WaitForSecondsRealtime(1f);
         }
-        EndGame(true);
-        StopCoroutine("Timer");
 
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        DialogueManager dialogueManager = DialogueManager.Instance;
+        if (dialogueManager.inDialogue)
+        {
+            dialogueManager.HideDialogue();
+        }
+        else
+        {
+            dad2.SetActive(false);
+            dad3.SetActive(true);
+            Actor actor = dad3.GetComponent<Actor>();
+            dialogueManager.StartDialogue(actor, actor.Dialogue.RootNode, actor.italicize);
+        }
+        StopCoroutine("Timer");
     }
 
     public void changeCharacters()
