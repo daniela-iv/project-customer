@@ -14,7 +14,8 @@ public class FootStepScript : MonoBehaviour
         stepCoolDown -= Time.deltaTime;
         if ((Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) && stepCoolDown < 0f)
         {
-            audioSource.pitch = 1f + Random.Range(-0.2f, 0.2f);
+            audioSource.pitch = 1f + Random.Range(-0.2f, 0.3f);
+            audioSource.volume = Random.Range(10, 100);
             audioSource.PlayOneShot(footStep, 0.5f);
             stepCoolDown = stepRate;
         }
