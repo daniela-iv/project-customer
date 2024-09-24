@@ -15,46 +15,6 @@ MonoBehaviour:
   RootNode:
     positiveReputationDialogue: What do you want?
     positiveReputationResponses:
-    - ResponseText: "Good evening, Mr. Walker. I\u2019m here from social services.
-        A neighbor reported some strange sounds coming from your home, and I need
-        to ask a few questions."
-      RequiredObjectTag: 
-      NextNode:
-        positiveReputationDialogue: Strange sounds? Who told you that?
-        positiveReputationResponses:
-        - ResponseText: "I just need to have a quick look around to ensure everything\u2019s
-            okay."
-          RequiredObjectTag: 
-          NextNode:
-            positiveReputationDialogue: I want to see your ID first.
-            positiveReputationResponses:
-            - ResponseText: '*Show him your ID.*'
-              RequiredObjectTag: 
-              NextNode:
-                positiveReputationDialogue: "Alright. Get in and do what you need
-                  to, but don\u2019t waste my time."
-                positiveReputationResponses:
-                - ResponseText: Alright.
-                  RequiredObjectTag: 
-                  NextNode:
-                    positiveReputationDialogue: 
-                    positiveReputationResponses: []
-                    negativeReputationDialogue: 
-                    negativeReputationResponses: []
-                    changeReputation: 0
-                    changeReputationTo: 0
-                negativeReputationDialogue: 
-                negativeReputationResponses: []
-                changeReputation: 0
-                changeReputationTo: 0
-            negativeReputationDialogue: 
-            negativeReputationResponses: []
-            changeReputation: 0
-            changeReputationTo: 0
-        negativeReputationDialogue: 
-        negativeReputationResponses: []
-        changeReputation: 0
-        changeReputationTo: 0
     - ResponseText: You have a beautiful family, Jim. Why is Ethan not smiling in
         these photos, though?
       RequiredObjectTag: Family Photo
@@ -159,46 +119,6 @@ MonoBehaviour:
         changeReputationTo: 0
     negativeReputationDialogue: What do you want?
     negativeReputationResponses:
-    - ResponseText: "Good evening, Mr. Walker. I\u2019m here from social services.
-        A neighbor reported some strange sounds coming from your home, and I need
-        to ask a few questions."
-      RequiredObjectTag: 
-      NextNode:
-        positiveReputationDialogue: 
-        positiveReputationResponses: []
-        negativeReputationDialogue: Strange sounds? Who told you that?
-        negativeReputationResponses:
-        - ResponseText: "I just need to have a quick look around to ensure everything\u2019s
-            okay."
-          RequiredObjectTag: 
-          NextNode:
-            positiveReputationDialogue: 
-            positiveReputationResponses: []
-            negativeReputationDialogue: I want to see your ID first.
-            negativeReputationResponses:
-            - ResponseText: '*Show him your ID.*'
-              RequiredObjectTag: 
-              NextNode:
-                positiveReputationDialogue: 
-                positiveReputationResponses: []
-                negativeReputationDialogue: "Alright. Get in and do what you need
-                  to, but don\u2019t waste my time."
-                negativeReputationResponses:
-                - ResponseText: Alright.
-                  RequiredObjectTag: 
-                  NextNode:
-                    positiveReputationDialogue: 
-                    positiveReputationResponses: []
-                    negativeReputationDialogue: 
-                    negativeReputationResponses: []
-                    changeReputation: 0
-                    changeReputationTo: 0
-                changeReputation: 0
-                changeReputationTo: 0
-            changeReputation: 0
-            changeReputationTo: 0
-        changeReputation: 0
-        changeReputationTo: 0
     - ResponseText: You have a beautiful family, Jim. Why is Ethan not smiling in
         these photos, though?
       RequiredObjectTag: Family Photo

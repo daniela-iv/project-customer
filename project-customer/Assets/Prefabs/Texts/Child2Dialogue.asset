@@ -20,18 +20,54 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: I really wanted my teddy in the photos but dad
           just threw him across the room.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: Boring...
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found this belt. Has your dad hurt you with it?
       RequiredObjectTag: Blood Stained Belt
       NextNode:
         positiveReputationDialogue: "When he\u2019s mad... I try to hide."
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: (Silent)
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Do you know about these bottles?
@@ -39,9 +75,27 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: He hides them. But I know, when he drinks them
           I have to hide.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: "No\u2026"
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Hey buddy. Can you tell me about these drawings?
@@ -49,9 +103,27 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: "That\u2019s what he looks like when he\u2019s
           mad."
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: "I was just doodling on the paper\u2026"
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found these cigarettes in your desk. Do you know where they
@@ -60,9 +132,27 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: Dad says smoking helps him calm down so I thought
           I could try...
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: I don't know how they got there, I swear.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Who usually does the dishes in the house?
@@ -70,9 +160,27 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: Dad never helps with the chores. Mom's always
           so tired.
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: Mom.
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Does the trash in the kitchen bother you at all?
@@ -90,29 +198,81 @@ MonoBehaviour:
       NextNode:
         positiveReputationDialogue: He's always breaking things when he's drunk.
           I can't keep replacing plates every week!
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: (Silent)
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Do you happen to know whose bandages these are?
       RequiredObjectTag: Used Bandages
       NextNode:
         positiveReputationDialogue: They're mine. I'm all better though, promise!
-        positiveReputationResponses: []
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         negativeReputationDialogue: (Silent)
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
-    - ResponseText: Hey, you like superheroes too? Sweet!
-      RequiredObjectTag: Superhero Poster
+    - ResponseText: Hey, my daughter likes Winnie the Pooh as well. Do you like him?
+      RequiredObjectTag: Winnie Poster
       NextNode:
-        positiveReputationDialogue: Yeah! Mom says one day I might be able to be
-          one myself!
-        positiveReputationResponses: []
-        negativeReputationDialogue: Yeah! Mom says one day I might be able to be
-          one myself!
-        negativeReputationResponses: []
+        positiveReputationDialogue: Yeah! Winnie's my best friend in the whole world!
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        negativeReputationDialogue: Yeah! Winnie's my best friend in the whole world!
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 1
         changeReputationTo: 1
     - ResponseText: Leave.
@@ -133,7 +293,16 @@ MonoBehaviour:
           just threw him across the room.
         positiveReputationResponses: []
         negativeReputationDialogue: Boring...
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: I found this belt. Has your dad hurt you with it?
