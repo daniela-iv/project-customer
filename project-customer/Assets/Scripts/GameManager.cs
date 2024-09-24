@@ -115,13 +115,15 @@ public class GameManager : MonoBehaviour
     public void EndGame(bool dadKickedOut)
     {
         Time.timeScale = 0;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         if (dadKickedOut)
         {
             end3.SetActive(true);
         }
         else
         {
-            DialogueManager dialogueManager = DialogueManager.Instance;
             bool momRep = mom2.GetComponent<Actor>().reputation;
             bool sonRep = son2.GetComponent<Actor>().reputation;
 
