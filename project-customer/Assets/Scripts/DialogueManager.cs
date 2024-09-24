@@ -160,7 +160,6 @@ public class DialogueManager : MonoBehaviour
         if (actor.reputation)
         {
             Debug.Log(actor.Name + " Do positive behaviour logic: " +actor.reputation);
-            print("test1");
             DialogueBody.text = node.positiveReputationDialogue;
             portrait.sprite = actor.positiveFace;
             portrait.color = Color.white;
@@ -194,7 +193,6 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log("Do negative behaviour logic");
 
-            print("test2");
             DialogueBody.text = node.negativeReputationDialogue;
             portrait.sprite = actor.negativeFace;
             portrait.color = Color.white;
