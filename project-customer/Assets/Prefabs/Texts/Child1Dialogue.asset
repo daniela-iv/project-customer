@@ -267,7 +267,7 @@ MonoBehaviour:
         changeReputation: 0
         changeReputationTo: 0
     - ResponseText: Hey, you like Winnie the Pooh? Sweet.
-      RequiredObjectTag: Superhero Poster
+      RequiredObjectTag: Winnie the Pooh Poster
       NextNode:
         positiveReputationDialogue: Yeah! Winnie is my best friend!
         positiveReputationResponses:
@@ -576,6 +576,33 @@ MonoBehaviour:
             changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
+    - ResponseText: Hey, you like Winnie the Pooh? Sweet.
+      RequiredObjectTag: Winnie the Pooh Poster
+      NextNode:
+        positiveReputationDialogue: Yeah! Winnie is my best friend!
+        positiveReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        negativeReputationDialogue: Yeah! Winnie is my best friend!
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
+        changeReputation: 1
+        changeReputationTo: 1
     - ResponseText: Leave.
       RequiredObjectTag: 
       NextNode:

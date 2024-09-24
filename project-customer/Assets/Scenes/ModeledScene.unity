@@ -15122,7 +15122,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 31e6d8ee34ab91e4d826a737b0db77c4, type: 3}
     - target: {fileID: 800554902488020300, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: startingReputation
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1272926929046355776, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: m_Name
@@ -22392,7 +22392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 728720558668128839, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: timeBeforeFadeOut
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1069388236463774184, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -24813,7 +24813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1272926929046355776, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2867329579856621662, guid: 819e78a0864094c45ba47e4fa62f2e13, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -26347,12 +26347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4174859560999386992, guid: b8c9189163951c84386928cbfe442971, type: 3}
       propertyPath: Name
-      value: Superhero Poster
+      value: Winnie the Pooh Poster
       objectReference: {fileID: 0}
     - target: {fileID: 4174859560999386992, guid: b8c9189163951c84386928cbfe442971, type: 3}
       propertyPath: ItemNote
-      value: Ethan seems to really like superheroes and comics. I should ask him
-        about them.
+      value: Ethan seems to really like Winnie the Pooh. I should ask him about it.
       objectReference: {fileID: 0}
     - target: {fileID: 4174859560999386992, guid: b8c9189163951c84386928cbfe442971, type: 3}
       propertyPath: ItemDialogue
