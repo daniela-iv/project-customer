@@ -31,7 +31,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject end3;
 
-
+    public AudioSource audioSource;
+    public AudioClip winAudio;
+    public AudioClip loseAudio;
     [SerializeField]
     private float dadTimer;
 
@@ -131,14 +133,17 @@ public class GameManager : MonoBehaviour
 
             if (momRep && sonRep) //rep kid and mom 1 or mom 1
             {
+                audioSource.PlayOneShot(winAudio);
                 end1.SetActive(true);
             }
-            else if (momRep) //rep kid 1
+            else if (sonRep) //rep kid 1
             {
+                audioSource.PlayOneShot(winAudio);
                 end2.SetActive(true);
             }
             else // rep kid and mom 0
             {
+                audioSource.PlayOneShot(loseAudio);
                 end3.SetActive(true);
             }
         }
