@@ -51,6 +51,7 @@ public class Item : MonoBehaviour
                     inspect.SetActive(true);
                     Instantiate(inspectModel, inspectObjPos.transform.position, Quaternion.identity, inspectObjPos.transform);
                     Camera.main.GetComponent<MouseLook>().CanLookAround = false;
+                    GameManager.Instance.crosshair.SetActive(false);
                     GetComponent<AudioSource>().PlayOneShot(clip);
                     GameObject.FindGameObjectWithTag("Player").GetComponent<MouseLook>().CanLookAround = false;
                 }

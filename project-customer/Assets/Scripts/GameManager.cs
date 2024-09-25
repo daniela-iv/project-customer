@@ -43,6 +43,8 @@ public class GameManager : MonoBehaviour
     public AudioSource menuMusic;
     public AudioSource gameMusic;
 
+    public GameObject crosshair;
+
     public GameState gameState = GameState.firstStage;
 
     public enum GameState

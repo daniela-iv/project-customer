@@ -88,7 +88,9 @@ public class FadeScript : MonoBehaviour
             canvasGroup.alpha -= fadeSpeed;
             yield return new WaitForSecondsRealtime(0.01f);
         }
-        DialogueManager.Instance.FreezePlayer(false);
+        if(isTrigger)
+            DialogueManager.Instance.FreezePlayer(false);
+
         StopCoroutine("fadeImageOut");
         
     }
