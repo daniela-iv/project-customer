@@ -13948,7 +13948,7 @@ PrefabInstance:
       objectReference: {fileID: 323635964}
     - target: {fileID: 2254751033462522740, guid: b2236b9ab0618d04580ec497094ec023, type: 3}
       propertyPath: dadTimer
-      value: 10
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 2254751033462522740, guid: b2236b9ab0618d04580ec497094ec023, type: 3}
       propertyPath: winAudio
