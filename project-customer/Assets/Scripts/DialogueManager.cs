@@ -36,11 +36,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private GameObject dad3;
 
-    [SerializeField]
-    private AudioSource audioSource;
-    [SerializeField]
-    private AudioClip buttonClick;
-
     private void Awake()
     {
         if (Instance == null)
@@ -134,8 +129,6 @@ public class DialogueManager : MonoBehaviour
     {
         if (!response.NextNode.IsLastPositiveNode())
         {
-            print("audio button playinh");
-            audioSource.PlayOneShot(buttonClick);
             response.NextNode.speakerName = item.Name;
             StartItemDialogue(item, response.NextNode, italicize);
         }
