@@ -17,7 +17,8 @@ public class Item : MonoBehaviour
 
     [SerializeField]
     private AudioClip clip;
-
+    [SerializeField]
+    private AudioClip fuseSound;
     public enum InteractionType
     {
         Text,
@@ -61,6 +62,7 @@ public class Item : MonoBehaviour
                 {
                     Debug.Log("item with switch interact");
                     GetComponentInChildren<Light>().color = Color.red;
+                    GetComponent<AudioSource>().PlayOneShot(fuseSound);
                     GameManager.Instance.SecondStage();
                 }
                 break;
