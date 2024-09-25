@@ -275,7 +275,8 @@ MonoBehaviour:
             changeReputationTo: 0
         negativeReputationDialogue: Yeah! Winnie's my best friend in the whole world!
         negativeReputationResponses:
-        - ResponseText: <i>Leave.</i>
+        - ResponseText: <i>Ethan seems more comfortable. He might find it easier
+            to open up now.</i>
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 

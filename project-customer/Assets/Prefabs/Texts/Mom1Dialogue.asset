@@ -309,8 +309,7 @@ MonoBehaviour:
             changeReputationTo: 0
         negativeReputationDialogue: Oh, of course not! Isn't that right honey? Hahah...
         negativeReputationResponses:
-        - ResponseText: I'm here on a wellness check because the neighbors heard
-            -
+        - ResponseText: I'm here on a wellness check because of an anonymous -
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 

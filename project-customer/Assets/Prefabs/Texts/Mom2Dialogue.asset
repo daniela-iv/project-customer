@@ -272,35 +272,6 @@ MonoBehaviour:
             changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
-    - ResponseText: I found some pretty heavy antidepressants. Are you alright, Linda?
-      RequiredObjectTag: Perscription Pills
-      NextNode:
-        positiveReputationDialogue: "After the yelling and drinking, I don\u2019t
-          know how to cope anymore. It\u2019s just too much."
-        positiveReputationResponses:
-        - ResponseText: <i>Leave.</i>
-          RequiredObjectTag: 
-          NextNode:
-            positiveReputationDialogue: 
-            positiveReputationResponses: []
-            negativeReputationDialogue: 
-            negativeReputationResponses: []
-            changeReputation: 0
-            changeReputationTo: 0
-        negativeReputationDialogue: "After the yelling and drinking, I don\u2019t
-          know how to cope anymore. It\u2019s just too much."
-        negativeReputationResponses:
-        - ResponseText: <i>Leave.</i>
-          RequiredObjectTag: 
-          NextNode:
-            positiveReputationDialogue: 
-            positiveReputationResponses: []
-            negativeReputationDialogue: 
-            negativeReputationResponses: []
-            changeReputation: 0
-            changeReputationTo: 0
-        changeReputation: 1
-        changeReputationTo: 1
     - ResponseText: Leave.
       RequiredObjectTag: 
       NextNode:
@@ -330,7 +301,8 @@ MonoBehaviour:
         negativeReputationDialogue: "After the yelling and drinking, I don\u2019t
           know how to cope anymore. It\u2019s just too much."
         negativeReputationResponses:
-        - ResponseText: <i>Leave.</i>
+        - ResponseText: <i>She seems more cooperative now. Maybe she'll be more open
+            about the clues I've found.</i>
           RequiredObjectTag: 
           NextNode:
             positiveReputationDialogue: 
