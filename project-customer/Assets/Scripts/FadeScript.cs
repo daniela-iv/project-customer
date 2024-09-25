@@ -32,17 +32,7 @@ public class FadeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            if (canvasGroup.alpha == 0f)
-            {
-                fadeIn();
-            }
-            else
-            {
-                fadeOut();
-            }
-        }
+
     }
 
     public void fadeIn()
