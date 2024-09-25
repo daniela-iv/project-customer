@@ -26,13 +26,23 @@ MonoBehaviour:
         changeReputationTo: 0
     negativeReputationDialogue: Can't you see I'm busy?
     negativeReputationResponses:
-    - ResponseText: <i>Leave.</i>
+    - ResponseText: <i>He'll be busy for a few minutes. I might be able to talk to
+        the others privately now.</i>
       RequiredObjectTag: 
       NextNode:
         positiveReputationDialogue: 
         positiveReputationResponses: []
         negativeReputationDialogue: 
-        negativeReputationResponses: []
+        negativeReputationResponses:
+        - ResponseText: <i>Leave.</i>
+          RequiredObjectTag: 
+          NextNode:
+            positiveReputationDialogue: 
+            positiveReputationResponses: []
+            negativeReputationDialogue: 
+            negativeReputationResponses: []
+            changeReputation: 0
+            changeReputationTo: 0
         changeReputation: 0
         changeReputationTo: 0
     changeReputation: 0
