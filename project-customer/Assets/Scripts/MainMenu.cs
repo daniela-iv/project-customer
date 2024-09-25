@@ -7,6 +7,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private GameObject tutorialPage;
     [SerializeField]
+    private GameObject tutorial2Page;
+    [SerializeField]
     private Actor dad;
 
     // Start is called before the first frame update
@@ -26,7 +28,7 @@ public class MainMenu : MonoBehaviour
     public void Continu()
     {
         Time.timeScale = 1f;
-        tutorialPage.SetActive(false);  
+        tutorial2Page.SetActive(false);  
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
