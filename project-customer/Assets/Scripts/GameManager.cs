@@ -140,6 +140,8 @@ public class GameManager : MonoBehaviour
         Cursor.visible = true;
         if (dadKickedOut)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             end3.SetActive(true);
             audioSource.PlayOneShot(DoorAudio);
         }
@@ -150,7 +152,10 @@ public class GameManager : MonoBehaviour
 
             print(momRep + " < mom rep ! ending ! son rep > " + sonRep);
 
-            if (momRep && sonRep) //rep kid and mom 1 or mom 1
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            if (momRep) //rep kid and mom 1 or mom 1
             {
                 audioSource.PlayOneShot(winAudio);
                 end1.SetActive(true);
