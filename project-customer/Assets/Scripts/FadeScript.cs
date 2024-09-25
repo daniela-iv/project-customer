@@ -85,7 +85,6 @@ public class FadeScript : MonoBehaviour
         }
         fadeOut();
         StopCoroutine("Timer");
-        
     }
 
 
