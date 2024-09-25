@@ -35,6 +35,11 @@ public class DialogueManager : MonoBehaviour
     private GameObject dad1;
     [SerializeField]
     private GameObject dad3;
+    [SerializeField]
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioClip buttonClick;
+
 
     private void Awake()
     {
@@ -129,6 +134,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (!response.NextNode.IsLastPositiveNode())
         {
+            audioSource.PlayOneShot(buttonClick);
             response.NextNode.speakerName = item.Name;
             StartItemDialogue(item, response.NextNode, italicize);
         }
@@ -250,6 +256,8 @@ public class DialogueManager : MonoBehaviour
 
         if (!isLastNode)
         {
+
+            audioSource.PlayOneShot(buttonClick);
             response.NextNode.speakerName = actor.Name;
             StartActorDialogue(actor, response.NextNode, italicize);
         }
