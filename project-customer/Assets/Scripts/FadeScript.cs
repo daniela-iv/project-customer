@@ -14,11 +14,19 @@ public class FadeScript : MonoBehaviour
 
     [SerializeField]
     private bool isTrigger;
+    
+    [SerializeField]
+    private AudioSource source;
+    [SerializeField]
+    private AudioClip clip;
+    [SerializeField]
+    private AudioClip clipPart2;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(isTrigger)
+            source.clip = clip;
     }
 
     // Update is called once per frame
@@ -47,9 +55,12 @@ public class FadeScript : MonoBehaviour
 
         while (canvasGroup.alpha < 1f)
         {
-            if(isTrigger && !DialogueManager.Instance.inDialogue)
+            if (isTrigger && !DialogueManager.Instance.inDialogue)
+            {
                 DialogueManager.Instance.FreezePlayer(true);
-
+                if(GameManager.Instance.dad1.activeSelf)
+                    source.volume -= fadeSpeed;
+            }
 
             canvasGroup.alpha += fadeSpeed;
             yield return new WaitForSecondsRealtime(0.01f);
@@ -61,9 +72,15 @@ public class FadeScript : MonoBehaviour
     
     private IEnumerator Timer()
     {
-        if(isTrigger)
+        if (isTrigger)
+        {
             GameManager.Instance.changeCharacters();
-
+            if (GameManager.Instance.dad2.activeSelf)
+            {
+                source.clip = clipPart2;
+                source.Play();
+            }
+        }
         float timer = timeBeforeFadeOut;
         while (timer > 0f)
         {
@@ -85,6 +102,10 @@ public class FadeScript : MonoBehaviour
     {
         while(canvasGroup.alpha > 0f)
         {
+            if(isTrigger)
+                if (GameManager.Instance.dad2.activeSelf)
+                    source.volume += fadeSpeed;
+
             canvasGroup.alpha -= fadeSpeed;
             yield return new WaitForSecondsRealtime(0.01f);
         }

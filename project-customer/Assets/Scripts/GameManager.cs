@@ -12,10 +12,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private GameObject dad0;
-    [SerializeField]
-    private GameObject dad1;
-    [SerializeField]
-    private GameObject dad2;
+    public GameObject dad1;
+    public GameObject dad2;
     [SerializeField]
     private GameObject dad3;
     [SerializeField]
