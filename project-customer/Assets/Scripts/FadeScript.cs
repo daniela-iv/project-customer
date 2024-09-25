@@ -80,12 +80,6 @@ public class FadeScript : MonoBehaviour
                 source.clip = clipPart2;
                 source.Play();
             }
-            if (GameManager.Instance.dad3.activeSelf)
-            {
-                Actor actor = GameManager.Instance.dad3.GetComponent<Actor>();
-                DialogueManager.Instance.StartDialogue(actor, actor.Dialogue.RootNode, actor.italicize);
-                StopCoroutine("Timer");
-            }
         }
         float timer = timeBeforeFadeOut;
         while (timer > 0f)

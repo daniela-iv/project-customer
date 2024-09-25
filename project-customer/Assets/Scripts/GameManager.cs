@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
     private GameObject dad0;
     public GameObject dad1;
     public GameObject dad2;
-    public GameObject dad3;
+    [SerializeField]
+    private GameObject dad3;
     [SerializeField]
     private GameObject son1;
     [SerializeField]
@@ -34,7 +35,6 @@ public class GameManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip winAudio;
     public AudioClip loseAudio;
-    public AudioClip DoorSound;
     [SerializeField]
     private float dadTimer;
 
@@ -105,7 +105,8 @@ public class GameManager : MonoBehaviour
         {
             dad2.SetActive(false);
             dad3.SetActive(true);
-            Fade();
+            Actor actor = dad3.GetComponent<Actor>();
+            dialogueManager.StartDialogue(actor, actor.Dialogue.RootNode, actor.italicize);
         }
         StopCoroutine("Timer");
     }
@@ -141,7 +142,6 @@ public class GameManager : MonoBehaviour
         if (dadKickedOut)
         {
             end3.SetActive(true);
-            audioSource.PlayOneShot(DoorSound);
         }
         else
         {
