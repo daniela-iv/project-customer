@@ -24555,7 +24555,7 @@ PrefabInstance:
     - target: {fileID: 989676156016651002, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: dc32678bdcc70954b812c658f58c82a6, type: 3}
+      objectReference: {fileID: 21300000, guid: 57dfddf6fa40f22449af05539d01a3bb, type: 3}
     - target: {fileID: 1069388236463774184, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 332
@@ -24567,7 +24567,7 @@ PrefabInstance:
     - target: {fileID: 1164833765029231809, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: dc32678bdcc70954b812c658f58c82a6, type: 3}
+      objectReference: {fileID: 21300000, guid: 57dfddf6fa40f22449af05539d01a3bb, type: 3}
     - target: {fileID: 1164833765029231809, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -24935,7 +24935,7 @@ PrefabInstance:
     - target: {fileID: 4813596475857628717, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: dc32678bdcc70954b812c658f58c82a6, type: 3}
+      objectReference: {fileID: 21300000, guid: 57dfddf6fa40f22449af05539d01a3bb, type: 3}
     - target: {fileID: 4859263024855199322, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -25203,11 +25203,11 @@ PrefabInstance:
     - target: {fileID: 7479704883542421160, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: dc32678bdcc70954b812c658f58c82a6, type: 3}
+      objectReference: {fileID: 21300000, guid: 57dfddf6fa40f22449af05539d01a3bb, type: 3}
     - target: {fileID: 8275323296151736728, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: dc32678bdcc70954b812c658f58c82a6, type: 3}
+      objectReference: {fileID: 21300000, guid: 57dfddf6fa40f22449af05539d01a3bb, type: 3}
     - target: {fileID: 8338233857240442391, guid: a127815800f47c1469146a264be8ae19, type: 3}
       propertyPath: m_Name
       value: Canvas
