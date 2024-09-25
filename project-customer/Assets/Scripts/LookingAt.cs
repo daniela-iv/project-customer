@@ -22,10 +22,10 @@ public class LookingAt : MonoBehaviour
     private bool isInspecting;
 
     private string inspectTextItem = "(F) Inspect ";
-    private string inspectTextItemText = "(F) examine ";
-    private string inspectTextItemExit = "(F) finish your investigation ";
-    private string inspectTextItemSwitch = "(F) Turn off power ";
-    private string inspectTextDoor = "(F) To open ";
+    private string inspectTextItemText = "(F) Examine ";
+    private string inspectTextItemExit = "(F) Finish your investigation ";
+    private string inspectTextItemSwitch = "(F) Turn off TV breaker ";
+    private string inspectTextDoor = "(F) Open ";
     private string inspectTextNPC = "(F) Talk with ";
 
     private void Awake()

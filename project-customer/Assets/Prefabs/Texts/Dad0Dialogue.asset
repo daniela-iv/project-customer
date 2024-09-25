@@ -18,8 +18,8 @@ MonoBehaviour:
     negativeReputationDialogue: What do you want?
     negativeReputationResponses:
     - ResponseText: "Good evening, Mr. Walker. I\u2019m here from social services.
-        A neighbor reported some strange sounds coming from your home, and I need
-        to ask a few questions."
+        We received an anonymous report of some strange sounds coming from your home,
+        and I need to ask a few questions."
       RequiredObjectTag: 
       NextNode:
         positiveReputationDialogue: 
@@ -34,7 +34,7 @@ MonoBehaviour:
             positiveReputationResponses: []
             negativeReputationDialogue: I want to see your ID first.
             negativeReputationResponses:
-            - ResponseText: '*Show him your ID.*'
+            - ResponseText: <i>Show him your ID.</i>
               RequiredObjectTag: 
               NextNode:
                 positiveReputationDialogue: 
