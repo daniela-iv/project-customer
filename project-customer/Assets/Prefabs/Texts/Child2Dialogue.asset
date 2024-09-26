@@ -402,7 +402,7 @@ MonoBehaviour:
         came from?
       RequiredObjectTag: Cigarette Pack
       NextNode:
-        positiveReputationDialogue: Mom says smoking helps him calm down so I thought
+        positiveReputationDialogue: Mom says smoking helps her calm down so I thought
           I could try...
         positiveReputationResponses:
         - ResponseText: <i>Leave.</i>
